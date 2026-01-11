@@ -13,7 +13,7 @@ namespace AppSenSoutenance
         public string SpecialiteProfesseur { get; set; }
 
         //Test pour voir si je peux push 
-        public string Id { get; set; };
+        public string Id { get; set; }
     }
 
 

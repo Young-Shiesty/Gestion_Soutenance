@@ -50,3 +50,4 @@ C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\De
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.exe
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.pdb
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Parametre.frmCandidat.resources
+C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Account.formUtilisateur.resources
