@@ -11,5 +11,10 @@ namespace AppSenSoutenance
     {
         [Required, MaxLength(80)]
         public string SpecialiteProfesseur { get; set; }
+
+        //Test pour voir si je peux push 
+        public string Id { get; set; };
     }
+
+
 }
