@@ -12,6 +12,7 @@ namespace AppSenSoutenance.View.Parametre
         public frmSession()
         {
             InitializeComponent();
+            //Test le projet
         }
 
         BdSenSoutenanceContext db = new BdSenSoutenanceContext();   
