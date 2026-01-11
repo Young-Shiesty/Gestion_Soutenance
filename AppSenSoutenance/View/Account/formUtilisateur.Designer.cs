@@ -156,6 +156,7 @@
             this.btnAdd.TabIndex = 28;
             this.btnAdd.Text = "&Ajouter";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtEmail
             // 

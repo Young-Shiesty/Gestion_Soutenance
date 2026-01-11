@@ -43,18 +43,7 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnSelect = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgCandidat)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgCandidat
-            // 
-            this.dgCandidat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgCandidat.Location = new System.Drawing.Point(397, 99);
-            this.dgCandidat.Name = "dgCandidat";
-            this.dgCandidat.RowHeadersWidth = 62;
-            this.dgCandidat.RowTemplate.Height = 28;
-            this.dgCandidat.Size = new System.Drawing.Size(448, 365);
-            this.dgCandidat.TabIndex = 1;
             // 
             // txtName
             // 
@@ -62,6 +51,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(251, 26);
             this.txtName.TabIndex = 1;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label1
             // 
@@ -199,7 +189,6 @@
             this.Controls.Add(this.dgCandidat);
             this.Name = "frmCandidat";
             this.Text = "frmCandidat";
-            ((System.ComponentModel.ISupportInitialize)(this.dgCandidat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

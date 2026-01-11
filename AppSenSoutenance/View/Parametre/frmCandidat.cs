@@ -1,13 +1,7 @@
 ﻿using AppSenSoutenance.Migrations;
 using AppSenSoutenance.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AppSenSoutenance.View.Parametre
@@ -53,7 +47,7 @@ namespace AppSenSoutenance.View.Parametre
             candidat.TelUtilisateur = txtTel.Text;
             candidat.EmailUtilisateur = txtEmail.Text;
             candidat.MotDePasse = txtPassword.Text;
-            db.SaveChanges(); 
+            db.SaveChanges();
             Effacer();
         }
 
@@ -73,7 +67,12 @@ namespace AppSenSoutenance.View.Parametre
             txtTel.Text = dgCandidat.CurrentRow.Cells[3].Value.ToString();
             txtEmail.Text = dgCandidat.CurrentRow.Cells[4].Value.ToString();
             txtPassword.Text = dgCandidat.CurrentRow.Cells[5].Value.ToString();
-           
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
-    }
+}

@@ -41,7 +41,9 @@ C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\De
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.frmConnexion.resources
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.frmMDI.resources
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.Properties.Resources.resources
+C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Account.formUtilisateur.resources
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Parametre.frmAnneeAcademique.resources
+C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Parametre.frmCandidat.resources
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Parametre.frmProfesseur.resources
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Parametre.frmSession.resources
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.csproj.GenerateResource.cache
@@ -49,5 +51,3 @@ C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\De
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSo.550BF408.Up2Date
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.exe
 C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.pdb
-C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Parametre.frmCandidat.resources
-C:\Users\user\Downloads\C#L3\SenSoutenance\SenSoutenance\AppSenSoutenance\obj\Debug\AppSenSoutenance.View.Account.formUtilisateur.resources

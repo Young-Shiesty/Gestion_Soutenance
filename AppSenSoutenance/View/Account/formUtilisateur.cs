@@ -1,12 +1,16 @@
-﻿using System;
+﻿using AppSenSoutenance.Migrations;
+using AppSenSoutenance.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace AppSenSoutenance.View.Account
 {
@@ -16,7 +20,28 @@ namespace AppSenSoutenance.View.Account
         {
             InitializeComponent();
         }
-
-       
+        BdSenSoutenanceContext db = new BdSenSoutenanceContext();
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Candidat candidat = new Candidat();
+            candidat.NomUtilisateur = txtNom.Text;
+            candidat.PrenomUtilisateur = txtPrenom.Text;
+            candidat.TelUtilisateur = txtTel.Text;
+            candidat.EmailUtilisateur = txtEmail.Text;
+            using (MD5 md5Hash = MD5.Create())
+            {
+                candidat.MotDePasse = Shered.Crypted.GetMd5Hash(md5Hash, "passer123");
+            }
+            candidat.MatriculeCandidat = txtMatricule.Text;
+            db.candidats.Add(candidat);
+            db.SaveChanges();
+            ResetForm();
+        }
+        private void ResetForm()
+        {
+            dgUtilisateur.DataSource = db.utilisateurs.Select(
+                a => new { a.IdUtilisateur,a.NomUtilisateur,a.PrenomUtilisateur,
+                a.TelUtilisateur,a.EmailUtilisateur}).ToList();
+        }
     }
 }

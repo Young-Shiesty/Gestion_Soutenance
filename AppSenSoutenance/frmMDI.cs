@@ -1,4 +1,5 @@
 ﻿using AppSenSoutenance.View;
+using AppSenSoutenance.View.Account;
 using AppSenSoutenance.View.Parametre;
 using Microsoft.VisualBasic.Devices;
 using System;
@@ -16,6 +17,8 @@ namespace AppSenSoutenance
 {
     public partial class frmMDI : Form
     {
+
+        public string profil;
         public frmMDI()
         {
             InitializeComponent();
@@ -82,11 +85,26 @@ namespace AppSenSoutenance
 
         private void frmMDI_Load(object sender, EventArgs e)
         {
-
+            securiteToolStripMenuItem.Visible = false;
+            if (profil == "Admin")
+            {
+                securiteToolStripMenuItem.Visible = true;
+            }
             Computer myComputer = new Computer();
             this.Width = myComputer.Screen.Bounds.Width;
             this.Height = myComputer.Screen.Bounds.Height;
             this.Location = new Point(0, 0);
+        }
+        
+        private void utilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fermer();
+            formUtilisateur f = new formUtilisateur();
+            f.MdiParent = this;
+            f.Show();
+            //pour utiliser tout l'espace dispoible dans le conteneur
+            f.WindowState = FormWindowState.Maximized;
+
         }
     }
 }
