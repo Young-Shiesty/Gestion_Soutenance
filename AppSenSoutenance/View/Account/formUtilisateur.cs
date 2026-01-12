@@ -43,5 +43,10 @@ namespace AppSenSoutenance.View.Account
                 a => new { a.IdUtilisateur,a.NomUtilisateur,a.PrenomUtilisateur,
                 a.TelUtilisateur,a.EmailUtilisateur}).ToList();
         }
+
+        private void btnPadd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
