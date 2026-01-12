@@ -45,6 +45,7 @@
             this.txtNom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabProfesseur = new System.Windows.Forms.TabPage();
+            this.btnPSelect = new System.Windows.Forms.Button();
             this.btnPsup = new System.Windows.Forms.Button();
             this.txtPSpecialite = new System.Windows.Forms.TextBox();
             this.btnPmod = new System.Windows.Forms.Button();
@@ -123,6 +124,7 @@
             this.label16.Location = new System.Drawing.Point(64, 496);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(36, 20);
+
             this.label16.TabIndex = 47;
             this.label16.Text = "&test";
             // 
@@ -245,6 +247,7 @@
             // 
             // tabProfesseur
             // 
+            this.tabProfesseur.Controls.Add(this.btnPSelect);
             this.tabProfesseur.Controls.Add(this.btnPsup);
             this.tabProfesseur.Controls.Add(this.txtPSpecialite);
             this.tabProfesseur.Controls.Add(this.btnPmod);
@@ -267,6 +270,17 @@
             this.tabProfesseur.Text = "Professeur";
             this.tabProfesseur.UseVisualStyleBackColor = true;
             // 
+            // btnPSelect
+            // 
+            this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnPSelect.Location = new System.Drawing.Point(20, 374);
+            this.btnPSelect.Name = "btnPSelect";
+            this.btnPSelect.Size = new System.Drawing.Size(200, 38);
+            this.btnPSelect.TabIndex = 60;
+            this.btnPSelect.Text = "&Selectionner";
+            this.btnPSelect.UseVisualStyleBackColor = false;
+            
+            // 
             // btnPsup
             // 
             this.btnPsup.Location = new System.Drawing.Point(274, 528);
@@ -276,6 +290,7 @@
             this.btnPsup.TabIndex = 49;
             this.btnPsup.Text = "&Supprimer";
             this.btnPsup.UseVisualStyleBackColor = true;
+            
             // 
             // txtPSpecialite
             // 
@@ -295,6 +310,7 @@
             this.btnPmod.TabIndex = 48;
             this.btnPmod.Text = "&Modifier";
             this.btnPmod.UseVisualStyleBackColor = true;
+            
             // 
             // label6
             // 
@@ -533,12 +549,11 @@
             this.dgUtilisateur.RowHeadersWidth = 62;
             this.dgUtilisateur.RowTemplate.Height = 28;
             this.dgUtilisateur.Size = new System.Drawing.Size(415, 575);
-            this.dgUtilisateur.TabIndex = 1;
-            // 
-            // formUtilisateur
-            // 
+
+            this.dgUtilisateur.Size = new System.Drawing.Size(736, 460);
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(890, 632);
             this.ControlBox = false;
             this.Controls.Add(this.dgUtilisateur);
@@ -605,5 +620,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dgUtilisateur;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnPSelect;
     }
 }
