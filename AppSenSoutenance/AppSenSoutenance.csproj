@@ -157,6 +157,12 @@
     <Compile Include="View\Parametre\frmCandidat.Designer.cs">
       <DependentUpon>frmCandidat.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Parametre\frmMemoire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Parametre\frmMemoire.Designer.cs">
+      <DependentUpon>frmMemoire.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Parametre\frmProfesseur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Parametre\frmCandidat.resx">
       <DependentUpon>frmCandidat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Parametre\frmMemoire.resx">
+      <DependentUpon>frmMemoire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Parametre\frmProfesseur.resx">
       <DependentUpon>frmProfesseur.cs</DependentUpon>

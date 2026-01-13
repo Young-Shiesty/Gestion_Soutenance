@@ -100,6 +100,16 @@ namespace AppSenSoutenance.View.Account
             txtPSpecialite.Text = professeur.SpecialiteProfesseur;
         }
 
-        
+        private void formUtilisateur_Load(object sender, EventArgs e)
+        {
+            dgUtilisateur.DataSource = db.utilisateurs.Select(
+                a => new {
+                    a.IdUtilisateur,
+                    a.NomUtilisateur,
+                    a.PrenomUtilisateur,
+                    a.TelUtilisateur,
+                    a.EmailUtilisateur
+                }).ToList(); 
+        }
     }
 }
