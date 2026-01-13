@@ -1,6 +1,7 @@
 ﻿using AppSenSoutenance.View;
 using AppSenSoutenance.View.Account;
 using AppSenSoutenance.View.Parametre;
+using AppSenSoutenance.Views.Parametre;
 using Microsoft.VisualBasic.Devices;
 using System;
 using System.Collections;
@@ -104,7 +105,17 @@ namespace AppSenSoutenance
             f.Show();
             //pour utiliser tout l'espace dispoible dans le conteneur
             f.WindowState = FormWindowState.Maximized;
+//teste de pushh
+        }
 
+        private void memoireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fermer();
+            frmMemoire f = new frmMemoire();
+            f.MdiParent = this;
+            f.Show();
+            //pour utiliser tout l'espace dispoible dans le conteneur
+            f.WindowState = FormWindowState.Maximized;
         }
     }
 }

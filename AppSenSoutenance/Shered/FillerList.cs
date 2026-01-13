@@ -35,5 +35,27 @@ namespace AppSenSoutenance.Shered
             }
             return laliste;
         }
+
+        public List<ListItem> FillSession()
+        {
+            List<ListItem> laListe = new List<ListItem>();
+
+            // Option par défaut
+            laListe.Add(new ListItem { Value = "0", Text = "Sélectionner" });
+
+            // Récupérer les sessions depuis la base
+            var liste = db.session.ToList();
+
+            foreach (var s in liste)
+            {
+                laListe.Add(new ListItem
+                {
+                    Value = s.IdSession.ToString(),   // IdSession pour SelectedValue
+                    Text = s.LibelleSession           // ce qui s’affiche dans le ComboBox
+                });
+            }
+
+            return laListe;
+        }
     }
 }
