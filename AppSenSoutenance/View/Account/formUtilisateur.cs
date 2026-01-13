@@ -20,7 +20,7 @@ namespace AppSenSoutenance.View.Account
             ResetForm();
         }
 
-        // ===================== CANDIDAT =====================
+        
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -43,7 +43,51 @@ namespace AppSenSoutenance.View.Account
             ResetForm();
         }
 
-        
+
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+            if (dgUtilisateur.CurrentRow == null) return;
+
+            int id = int.Parse(dgUtilisateur.CurrentRow.Cells[0].Value.ToString());
+            Candidat candidat = db.candidats.Find(id);
+
+            if (candidat == null) return;
+
+            candidat.NomUtilisateur = txtNom.Text;
+            candidat.PrenomUtilisateur = txtPrenom.Text;
+            candidat.TelUtilisateur = txtTel.Text;
+            candidat.EmailUtilisateur = txtEmail.Text;
+            candidat.MatriculeCandidat = txtMatricule.Text;
+
+            using (MD5 md5Hash = MD5.Create())
+            {
+                candidat.MotDePasse = Shered.Crypted.GetMd5Hash(md5Hash, "passer123");
+            }
+
+            db.SaveChanges();
+            ResetForm();
+
+        }
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+
+            if (dgUtilisateur.CurrentRow == null) return;
+
+            int id = int.Parse(dgUtilisateur.CurrentRow.Cells[0].Value.ToString());
+            Candidat candidat= db.candidats.Find(id);
+
+            if (candidat == null) return;
+
+            db.candidats.Remove(candidat);
+            db.SaveChanges();
+            ResetForm();
+
+
+
+        }
+
 
         private void btnPadd_Click(object sender, EventArgs e)
         {
@@ -135,5 +179,6 @@ namespace AppSenSoutenance.View.Account
                 })
                 .ToList();
         }
+
     }
 }

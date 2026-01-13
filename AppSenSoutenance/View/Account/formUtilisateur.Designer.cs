@@ -30,7 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabCandidat = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.txtMatricule = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -95,7 +94,6 @@
             // 
             // tabCandidat
             // 
-            this.tabCandidat.Controls.Add(this.label16);
             this.tabCandidat.Controls.Add(this.btnRemove);
             this.tabCandidat.Controls.Add(this.txtMatricule);
             this.tabCandidat.Controls.Add(this.btnEdit);
@@ -118,16 +116,6 @@
             this.tabCandidat.Text = "Candidat";
             this.tabCandidat.UseVisualStyleBackColor = true;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(64, 496);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 20);
-
-            this.label16.TabIndex = 47;
-            this.label16.Text = "&test";
-            // 
             // btnRemove
             // 
             this.btnRemove.Location = new System.Drawing.Point(267, 530);
@@ -137,6 +125,7 @@
             this.btnRemove.TabIndex = 30;
             this.btnRemove.Text = "&Supprimer";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // txtMatricule
             // 
@@ -156,6 +145,7 @@
             this.btnEdit.TabIndex = 29;
             this.btnEdit.Text = "&Modifier";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // label5
             // 
@@ -279,7 +269,6 @@
             this.btnPSelect.TabIndex = 60;
             this.btnPSelect.Text = "&Selectionner";
             this.btnPSelect.UseVisualStyleBackColor = false;
-            
             // 
             // btnPsup
             // 
@@ -290,7 +279,6 @@
             this.btnPsup.TabIndex = 49;
             this.btnPsup.Text = "&Supprimer";
             this.btnPsup.UseVisualStyleBackColor = true;
-            
             // 
             // txtPSpecialite
             // 
@@ -310,7 +298,6 @@
             this.btnPmod.TabIndex = 48;
             this.btnPmod.Text = "&Modifier";
             this.btnPmod.UseVisualStyleBackColor = true;
-            
             // 
             // label6
             // 
@@ -548,12 +535,13 @@
             this.dgUtilisateur.Name = "dgUtilisateur";
             this.dgUtilisateur.RowHeadersWidth = 62;
             this.dgUtilisateur.RowTemplate.Height = 28;
-            this.dgUtilisateur.Size = new System.Drawing.Size(415, 575);
-
             this.dgUtilisateur.Size = new System.Drawing.Size(736, 460);
+            this.dgUtilisateur.TabIndex = 0;
+            // 
+            // formUtilisateur
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.ClientSize = new System.Drawing.Size(890, 632);
             this.ControlBox = false;
             this.Controls.Add(this.dgUtilisateur);
@@ -619,7 +607,6 @@
         private System.Windows.Forms.TextBox txtCnom;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dgUtilisateur;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnPSelect;
     }
 }
