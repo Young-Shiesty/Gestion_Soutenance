@@ -552,6 +552,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "formUtilisateur";
             this.Text = "Gestion Des Utilisateur";
+            
             this.tabControl1.ResumeLayout(false);
             this.tabCandidat.ResumeLayout(false);
             this.tabCandidat.PerformLayout();
@@ -561,6 +562,7 @@
             this.tabChefDepatrement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUtilisateur)).EndInit();
             this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.formUtilisateur_Load);
 
         }
 

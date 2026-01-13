@@ -50,6 +50,7 @@ namespace AppSenSoutenance.View.Parametre
             Session session = db.session.Find(id);
             txtSession.Text = session.LibelleSession;
             cbbAnneeAcademique.SelectedValue = session.IdAnneeAcademique;
+            
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -66,7 +67,7 @@ namespace AppSenSoutenance.View.Parametre
         {
             int?id = int.Parse(dgSession.CurrentRow.Cells[0].Value.ToString());
             Session session = db.session.Find(id);
-            db.session.Remove(session);
+            db.session.Remove(session); 
             db.SaveChanges();
             Effacer();
         }

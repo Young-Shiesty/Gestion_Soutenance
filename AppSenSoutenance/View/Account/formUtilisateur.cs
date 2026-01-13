@@ -1,23 +1,40 @@
 ﻿using AppSenSoutenance.Migrations;
 using AppSenSoutenance.Models;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace AppSenSoutenance.View.Account
 {
     public partial class formUtilisateur : Form
     {
-        BdSenSoutenanceContext db = new BdSenSoutenanceContext();
+        BdSenSoutenanceContext db;
 
         public formUtilisateur()
         {
             InitializeComponent();
-            ResetForm();
+        }
+
+        private void formUtilisateur_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                db = new BdSenSoutenanceContext();
+                ResetForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de connexion: " + ex.Message);
+                this.Close();
+            }
         }
 
         
@@ -100,6 +117,10 @@ namespace AppSenSoutenance.View.Account
                 SpecialiteProfesseur = txtPSpecialite.Text
             };
 
+            professeur.NomUtilisateur = txtPnom.Text;
+            professeur.PrenomUtilisateur = txtPprenom.Text;
+            professeur.TelUtilisateur = txtPtel.Text;
+            professeur.EmailUtilisateur = txtPemail.Text;
             using (MD5 md5Hash = MD5.Create())
             {
                 professeur.MotDePasse = Shered.Crypted.GetMd5Hash(md5Hash, "passer123");
@@ -161,8 +182,10 @@ namespace AppSenSoutenance.View.Account
             txtPprenom.Text = professeur.PrenomUtilisateur;
             txtPtel.Text = professeur.TelUtilisateur;
             txtPemail.Text = professeur.EmailUtilisateur;
+            //txtMotDePasse.Text = professeur.MotDePasse;
             txtPSpecialite.Text = professeur.SpecialiteProfesseur;
         }
+
 
 
         private void btnCadd_Click(object sender, EventArgs e)
@@ -220,16 +243,24 @@ namespace AppSenSoutenance.View.Account
 
         private void ResetForm()
         {
-            dgUtilisateur.DataSource = db.utilisateurs
-                .Select(u => new
-                {
-                    u.IdUtilisateur,
-                    u.NomUtilisateur,
-                    u.PrenomUtilisateur,
-                    u.TelUtilisateur,
-                    u.EmailUtilisateur
-                })
-                .ToList();
+            if (db == null) return;
+            try
+            {
+                dgUtilisateur.DataSource = db.utilisateurs
+                    .Select(u => new
+                    {
+                        u.IdUtilisateur,
+                        u.NomUtilisateur,
+                        u.PrenomUtilisateur,
+                        u.TelUtilisateur,
+                        u.EmailUtilisateur
+                    })
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de chargement: " + ex.Message);
+            }
         }
 
         private void btnCsup_Click(object sender, EventArgs e)
