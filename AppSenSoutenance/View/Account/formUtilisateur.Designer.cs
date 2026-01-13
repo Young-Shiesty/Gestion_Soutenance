@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabCandidat = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.txtMatricule = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@
             this.txtNom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabProfesseur = new System.Windows.Forms.TabPage();
+            this.btnPSelect = new System.Windows.Forms.Button();
             this.btnPsup = new System.Windows.Forms.Button();
             this.txtPSpecialite = new System.Windows.Forms.TextBox();
             this.btnPmod = new System.Windows.Forms.Button();
@@ -72,7 +74,6 @@
             this.txtCnom = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dgUtilisateur = new System.Windows.Forms.DataGridView();
-            this.label16 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabCandidat.SuspendLayout();
             this.tabProfesseur.SuspendLayout();
@@ -116,6 +117,15 @@
             this.tabCandidat.TabIndex = 0;
             this.tabCandidat.Text = "Candidat";
             this.tabCandidat.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(57, 397);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(28, 16);
+            this.label16.TabIndex = 47;
+            this.label16.Text = "&test";
             // 
             // btnRemove
             // 
@@ -236,6 +246,7 @@
             // 
             // tabProfesseur
             // 
+            this.tabProfesseur.Controls.Add(this.btnPSelect);
             this.tabProfesseur.Controls.Add(this.btnPsup);
             this.tabProfesseur.Controls.Add(this.txtPSpecialite);
             this.tabProfesseur.Controls.Add(this.btnPmod);
@@ -258,6 +269,17 @@
             this.tabProfesseur.Text = "Professeur";
             this.tabProfesseur.UseVisualStyleBackColor = true;
             // 
+            // btnPSelect
+            // 
+            this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnPSelect.Location = new System.Drawing.Point(20, 374);
+            this.btnPSelect.Name = "btnPSelect";
+            this.btnPSelect.Size = new System.Drawing.Size(200, 38);
+            this.btnPSelect.TabIndex = 60;
+            this.btnPSelect.Text = "&Selectionner";
+            this.btnPSelect.UseVisualStyleBackColor = false;
+            this.btnPSelect.Click += new System.EventHandler(this.btnPSelect_Click);
+            // 
             // btnPsup
             // 
             this.btnPsup.Location = new System.Drawing.Point(244, 422);
@@ -267,6 +289,7 @@
             this.btnPsup.TabIndex = 49;
             this.btnPsup.Text = "&Supprimer";
             this.btnPsup.UseVisualStyleBackColor = true;
+            this.btnPsup.Click += new System.EventHandler(this.btnPsup_Click);
             // 
             // txtPSpecialite
             // 
@@ -286,6 +309,7 @@
             this.btnPmod.TabIndex = 48;
             this.btnPmod.Text = "&Modifier";
             this.btnPmod.UseVisualStyleBackColor = true;
+            this.btnPmod.Click += new System.EventHandler(this.btnPmod_Click);
             // 
             // label6
             // 
@@ -305,6 +329,7 @@
             this.btnPadd.TabIndex = 47;
             this.btnPadd.Text = "&Ajouter";
             this.btnPadd.UseVisualStyleBackColor = true;
+            this.btnPadd.Click += new System.EventHandler(this.btnPadd_Click);
             // 
             // txtPemail
             // 
@@ -522,23 +547,14 @@
             this.dgUtilisateur.Name = "dgUtilisateur";
             this.dgUtilisateur.RowHeadersWidth = 62;
             this.dgUtilisateur.RowTemplate.Height = 28;
-            this.dgUtilisateur.Size = new System.Drawing.Size(369, 460);
+            this.dgUtilisateur.Size = new System.Drawing.Size(736, 460);
             this.dgUtilisateur.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(57, 397);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 16);
-            this.label16.TabIndex = 47;
-            this.label16.Text = "&test";
             // 
             // formUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 506);
+            this.ClientSize = new System.Drawing.Size(1142, 506);
             this.ControlBox = false;
             this.Controls.Add(this.dgUtilisateur);
             this.Controls.Add(this.tabControl1);
@@ -604,5 +620,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dgUtilisateur;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnPSelect;
     }
 }
