@@ -263,7 +263,7 @@
             // btnPSelect
             // 
             this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btnPSelect.Location = new System.Drawing.Point(20, 374);
+            this.btnPSelect.Location = new System.Drawing.Point(33, 449);
             this.btnPSelect.Name = "btnPSelect";
             this.btnPSelect.Size = new System.Drawing.Size(200, 38);
             this.btnPSelect.TabIndex = 60;
@@ -420,6 +420,7 @@
             this.btnCsup.TabIndex = 49;
             this.btnCsup.Text = "&Supprimer";
             this.btnCsup.UseVisualStyleBackColor = true;
+            this.btnCsup.Click += new System.EventHandler(this.btnCsup_Click);
             // 
             // txtDepartement
             // 
@@ -439,6 +440,7 @@
             this.btnCmod.TabIndex = 48;
             this.btnCmod.Text = "&Modifier";
             this.btnCmod.UseVisualStyleBackColor = true;
+            this.btnCmod.Click += new System.EventHandler(this.btnCmod_Click);
             // 
             // label11
             // 
@@ -458,6 +460,7 @@
             this.btnCadd.TabIndex = 47;
             this.btnCadd.Text = "&Ajouter";
             this.btnCadd.UseVisualStyleBackColor = true;
+            this.btnCadd.Click += new System.EventHandler(this.btnCadd_Click);
             // 
             // txtCemail
             // 
@@ -594,7 +597,6 @@
         private System.Windows.Forms.TextBox txtPnom;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnCsup;
-        private System.Windows.Forms.TextBox txtDepartement;
         private System.Windows.Forms.Button btnCmod;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnCadd;
@@ -608,5 +610,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dgUtilisateur;
         private System.Windows.Forms.Button btnPSelect;
+        private System.Windows.Forms.TextBox txtDepartement;
     }
 }

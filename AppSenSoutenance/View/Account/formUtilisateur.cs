@@ -165,6 +165,58 @@ namespace AppSenSoutenance.View.Account
         }
 
 
+        private void btnCadd_Click(object sender, EventArgs e)
+        {
+            int idDep = int.Parse(txtDepartement.Text);
+            ChefDepartement chef = new ChefDepartement
+
+            {
+                NomUtilisateur = txtCnom.Text,
+                PrenomUtilisateur = txtCprenom.Text,
+                TelUtilisateur = txtCtel.Text,
+                EmailUtilisateur = txtCemail.Text,
+                //Je recupere l'id car on a une clee etrangere
+                IdDepartement = idDep
+                
+            };
+
+            using (MD5 md5Hash = MD5.Create())
+            {
+                chef.MotDePasse = Shered.Crypted.GetMd5Hash(md5Hash, "passer123");
+            }
+
+            db.chefsDepartements.Add(chef);
+            db.SaveChanges();
+            ResetForm();
+        }
+
+        private void btnCmod_Click(object sender, EventArgs e)
+        {
+            int idDep = int.Parse(txtDepartement.Text);
+
+            if (dgUtilisateur.CurrentRow == null) return;
+
+            int id = int.Parse(dgUtilisateur.CurrentRow.Cells[0].Value.ToString());
+            ChefDepartement  chef = db.chefsDepartements.Find(id);
+
+            if (chef == null) return;
+
+            chef.NomUtilisateur = txtPnom.Text;
+            chef.PrenomUtilisateur = txtPprenom.Text;
+            chef.TelUtilisateur = txtPtel.Text;
+            chef.EmailUtilisateur = txtPemail.Text;
+            chef.IdDepartement = idDep;
+
+            using (MD5 md5Hash = MD5.Create())
+            {
+                chef.MotDePasse = Shered.Crypted.GetMd5Hash(md5Hash, "passer123");
+            }
+
+            db.SaveChanges();
+            ResetForm();
+        }
+
+
 
         private void ResetForm()
         {
@@ -180,5 +232,22 @@ namespace AppSenSoutenance.View.Account
                 .ToList();
         }
 
-    }
+        private void btnCsup_Click(object sender, EventArgs e)
+        {
+         
+            if (dgUtilisateur.CurrentRow == null) return;
+
+            int id = int.Parse(dgUtilisateur.CurrentRow.Cells[0].Value.ToString());
+
+            ChefDepartement chef = db.chefsDepartements.Find(id);
+
+            if (chef == null) return;
+
+            db.chefsDepartements.Remove(chef);
+            db.SaveChanges();
+            ResetForm();
+        }
+
+    
+}
 }
