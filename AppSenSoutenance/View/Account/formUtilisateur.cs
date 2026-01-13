@@ -16,12 +16,25 @@ namespace AppSenSoutenance.View.Account
 {
     public partial class formUtilisateur : Form
     {
-        BdSenSoutenanceContext db = new BdSenSoutenanceContext();
+        BdSenSoutenanceContext db;
 
         public formUtilisateur()
         {
             InitializeComponent();
-            ResetForm();
+        }
+
+        private void formUtilisateur_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                db = new BdSenSoutenanceContext();
+                ResetForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de connexion: " + ex.Message);
+                this.Close();
+            }
         }
 
         
@@ -230,16 +243,24 @@ namespace AppSenSoutenance.View.Account
 
         private void ResetForm()
         {
-            dgUtilisateur.DataSource = db.utilisateurs
-                .Select(u => new
-                {
-                    u.IdUtilisateur,
-                    u.NomUtilisateur,
-                    u.PrenomUtilisateur,
-                    u.TelUtilisateur,
-                    u.EmailUtilisateur
-                })
-                .ToList();
+            if (db == null) return;
+            try
+            {
+                dgUtilisateur.DataSource = db.utilisateurs
+                    .Select(u => new
+                    {
+                        u.IdUtilisateur,
+                        u.NomUtilisateur,
+                        u.PrenomUtilisateur,
+                        u.TelUtilisateur,
+                        u.EmailUtilisateur
+                    })
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de chargement: " + ex.Message);
+            }
         }
 
         private void btnCsup_Click(object sender, EventArgs e)

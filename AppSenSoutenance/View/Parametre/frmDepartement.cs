@@ -16,6 +16,8 @@ namespace AppSenSoutenance.views.parametre
         public frmDepartement()
         {
             InitializeComponent();
+            this.Load += new System.EventHandler(this.frmDepartement_Load);
+
         }
         Bdsensoutenancecontext db = new Bdsensoutenancecontext();
         private void frmDepartement_Load(object sender, EventArgs e)

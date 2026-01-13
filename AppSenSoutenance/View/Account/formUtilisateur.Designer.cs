@@ -562,6 +562,7 @@
             this.tabChefDepatrement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUtilisateur)).EndInit();
             this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.formUtilisateur_Load);
 
         }
 

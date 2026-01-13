@@ -100,11 +100,17 @@ namespace AppSenSoutenance
         private void utilisateurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fermer();
-            formUtilisateur f = new formUtilisateur();
-            f.MdiParent = this;
-            f.Show();
-            //pour utiliser tout l'espace dispoible dans le conteneur
-            f.WindowState = FormWindowState.Maximized;
+            try
+            {
+                formUtilisateur f = new formUtilisateur();
+                f.MdiParent = this;
+                f.Show();
+                f.WindowState = FormWindowState.Maximized;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Impossible d'ouvrir le formulaire : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 //teste de pushh
         }
 
