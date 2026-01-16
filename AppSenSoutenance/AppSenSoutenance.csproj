@@ -132,6 +132,7 @@
     <Compile Include="Models\AnneeAcademique.cs" />
     <Compile Include="Models\BdSenSoutenanceContext.cs" />
     <Compile Include="Models\Professeur.cs" />
+    <Compile Include="Models\Td_Erreur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Session.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Shered\Crypted.cs" />
     <Compile Include="Shered\FillerList.cs" />
+    <Compile Include="Shered\Logger.cs" />
     <Compile Include="View\Account\formUtilisateur.cs">
       <SubType>Form</SubType>
     </Compile>
