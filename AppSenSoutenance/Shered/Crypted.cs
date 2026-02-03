@@ -46,7 +46,6 @@ namespace AppSenSoutenance.Shered
         /// <returns></returns>
         public static bool VerifyMd5Hash(MD5 md5Hash, string input, string hash)
         {
-
             // Hash the input. 
             string hashOfInput = GetMd5Hash(md5Hash, input);
 
