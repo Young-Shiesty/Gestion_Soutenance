@@ -55,7 +55,26 @@ namespace AppSenSoutenance
 
             }
         }
-        private void btnQuitter_Click(object sender, EventArgs e)
+      
+
+       
+
+        private void txtIdentifiant_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMotDePasse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuitter_Click_1(object sender, EventArgs e)
         {
             Logger.WriteLogSystem("Deconnexion", "btnQuitter_Click");
             Application.Exit();

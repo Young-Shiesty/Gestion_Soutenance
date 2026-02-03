@@ -48,7 +48,7 @@ namespace AppSenSoutenance.Shered
             try
             {
                 string path = "~/Error/" + fileName + ".txt";
-                    //System.Web.HttpContext.Current.Server.MapPath("~/Error/" + fileName + ".txt");
+                //System.Web.HttpContext.Current.Server.MapPath("~/Error/" + fileName + ".txt");
                 if (!File.Exists(path))
                 {
                     File.Create(path);
@@ -94,7 +94,7 @@ namespace AppSenSoutenance.Shered
             using (EventLog eventLog = new EventLog("Application"))
             {
                 eventLog.Source = "SenSoutenance";
-                eventLog.WriteEntry(string.Format("date: {0}, libelle: {1}, description {2}", DateTime.Now, libelle, erreur), EventLogEntryType.Information,101,1);
+                eventLog.WriteEntry(string.Format("date: {0}, libelle: {1}, description {2}", DateTime.Now, libelle, erreur), EventLogEntryType.Information, 101, 1);
             }
         }
     }
