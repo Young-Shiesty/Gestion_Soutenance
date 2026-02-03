@@ -24,6 +24,6 @@ namespace AppSenSoutenance
         public byte[] DocumentMemoire { get; set; }
         public int? IdSession { get; set; }
         [ForeignKey("IdSession")]
-        public virtual Session Session { get; set; }
+        public virtual Session Session { get; set; } 
     }
 }

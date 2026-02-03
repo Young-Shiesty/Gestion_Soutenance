@@ -19,6 +19,24 @@ namespace AppSenSoutenance.View.Parametre
         FillerList filler = new FillerList();  
         private void frmSession_Load(object sender, EventArgs e)
         {
+            //dgSession.DataSource = (from m in db.session
+            //                        join s in db.anneesAcademiques on m.IdAnneeAcademique equals s.IdAnneeAcademique
+            //                        select new
+            //                        {
+            //                            m.IdSession,
+            //                            m.LibelleSession,
+            //                            AnneeAcademique = m.AnneeAcademique
+            //                        }).ToList();
+            //                        
+            dgSession.DataSource = db.session.Select(
+                 a => new
+                 {
+                     a.IdSession,
+                     a.LibelleSession,
+                     a.AnneeAcademique.LibelleAnneeAcademique
+                     //db.session.Find(a.IdSession).LibelleSession, 
+
+                 }).ToList();
             Effacer();
         }
 
@@ -37,7 +55,7 @@ namespace AppSenSoutenance.View.Parametre
 
             txtSession.Clear();
             cbbAnneeAcademique.SelectedValue = "";
-            dgSession.DataSource = db.session.ToList();
+           // dgSession.DataSource = db.session.ToList();
             cbbAnneeAcademique.DataSource = filler.fillAnneeAcademique();
             cbbAnneeAcademique.DisplayMember = "Text";
             cbbAnneeAcademique.ValueMember = "Value";
