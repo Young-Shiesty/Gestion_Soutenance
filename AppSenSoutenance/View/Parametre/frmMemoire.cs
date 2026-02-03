@@ -47,12 +47,23 @@ namespace AppSenSoutenance.Views.Parametre
             txtSujetMemoire.Clear();
 
             // Met à jour le DataGrid
-            dgMemoire.DataSource = db.memoires.Select(
-                 a => new {
-                     a.IdMemoire,
-                     a.SujetMemoire,
-                     a.IdSession, 
-                 }).ToList(); 
+            //String libelle = db.session.Find(a.IdSession).LibelleSession;
+            //dgMemoire.DataSource = db.memoires.Select(
+            //     a => new {
+            //         a.IdMemoire,
+            //         a.SujetMemoire,
+            //         //db.session.Find(a.IdSession).LibelleSession, 
+
+            //     }).ToList(); 
+            dgMemoire.DataSource = (from m in db.memoires 
+                                    join s in db.session on m.IdSession equals s.IdSession
+                                    select new
+                                    {
+                                        m.IdMemoire,
+                                        m.SujetMemoire,
+                                        LibelleSession = s.LibelleSession
+                                    }).ToList(); 
+
 
             // Année académique
             cbbAnneeAcademique.DataSource = filler.fillAnneeAcademique();
