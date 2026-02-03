@@ -60,5 +60,10 @@ namespace AppSenSoutenance
             Logger.WriteLogSystem("Deconnexion", "btnQuitter_Click");
             Application.Exit();
         }
+
+        private void frmConnexion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

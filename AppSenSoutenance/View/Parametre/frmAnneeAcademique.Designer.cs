@@ -40,111 +40,154 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgAnneeAcademique)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgAnneeAcademique
-            // 
-            this.dgAnneeAcademique.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgAnneeAcademique.Location = new System.Drawing.Point(338, 74);
-            this.dgAnneeAcademique.Name = "dgAnneeAcademique";
-            this.dgAnneeAcademique.RowHeadersWidth = 62;
-            this.dgAnneeAcademique.RowTemplate.Height = 28;
-            this.dgAnneeAcademique.Size = new System.Drawing.Size(522, 422);
-            this.dgAnneeAcademique.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Texte";
-            // 
-            // txtLibelleAnneeAcademique
-            // 
-            this.txtLibelleAnneeAcademique.Location = new System.Drawing.Point(55, 74);
-            this.txtLibelleAnneeAcademique.Name = "txtLibelleAnneeAcademique";
-            this.txtLibelleAnneeAcademique.Size = new System.Drawing.Size(251, 26);
-            this.txtLibelleAnneeAcademique.TabIndex = 1;
-            // 
-            // txtAnneeAcademiqueVal
-            // 
-            this.txtAnneeAcademiqueVal.Location = new System.Drawing.Point(55, 165);
-            this.txtAnneeAcademiqueVal.Name = "txtAnneeAcademiqueVal";
-            this.txtAnneeAcademiqueVal.Size = new System.Drawing.Size(251, 26);
-            this.txtAnneeAcademiqueVal.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Valeur";
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(215, 394);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(91, 39);
-            this.btnEdit.TabIndex = 5;
-            this.btnEdit.Text = "&Modifier";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(215, 335);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(91, 39);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "&Ajouter";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Location = new System.Drawing.Point(215, 453);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(91, 39);
-            this.btnRemove.TabIndex = 6;
-            this.btnRemove.Text = "&Supprimer";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.Location = new System.Drawing.Point(215, 12);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(114, 45);
-            this.btnSelect.TabIndex = 3;
-            this.btnSelect.Text = "Selectionner";
-            this.btnSelect.UseVisualStyleBackColor = true;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
-            // 
-            // frmAnneeAcademique
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 558);
+            this.BackColor = System.Drawing.Color.FromArgb(245, 247, 250);
+            this.ClientSize = new System.Drawing.Size(900, 580);
             this.ControlBox = false;
+            this.Name = "frmAnneeAcademique";
+            this.Text = "Paramètres - Année académique";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+
+            // 
+            // dgAnneeAcademique
+            // 
+            this.dgAnneeAcademique.BackgroundColor = System.Drawing.Color.White;
+            this.dgAnneeAcademique.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dgAnneeAcademique.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgAnneeAcademique.Location = new System.Drawing.Point(360, 80);
+            this.dgAnneeAcademique.Name = "dgAnneeAcademique";
+            this.dgAnneeAcademique.RowHeadersWidth = 62;
+            this.dgAnneeAcademique.RowTemplate.Height = 28;
+            this.dgAnneeAcademique.Size = new System.Drawing.Size(510, 440);
+            this.dgAnneeAcademique.TabIndex = 0;
+
+            // 
+            // label1 - Texte
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            this.label1.Location = new System.Drawing.Point(40, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Texte";
+
+            // 
+            // txtLibelleAnneeAcademique
+            // 
+            this.txtLibelleAnneeAcademique.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtLibelleAnneeAcademique.Location = new System.Drawing.Point(40, 95);
+            this.txtLibelleAnneeAcademique.Name = "txtLibelleAnneeAcademique";
+            this.txtLibelleAnneeAcademique.Size = new System.Drawing.Size(280, 32);
+            this.txtLibelleAnneeAcademique.TabIndex = 1;
+
+            // 
+            // label2 - Valeur
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            this.label2.Location = new System.Drawing.Point(40, 150);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Valeur";
+
+            // 
+            // txtAnneeAcademiqueVal
+            // 
+            this.txtAnneeAcademiqueVal.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtAnneeAcademiqueVal.Location = new System.Drawing.Point(40, 185);
+            this.txtAnneeAcademiqueVal.Name = "txtAnneeAcademiqueVal";
+            this.txtAnneeAcademiqueVal.Size = new System.Drawing.Size(280, 32);
+            this.txtAnneeAcademiqueVal.TabIndex = 2;
+
+            // 
+            // btnSelect
+            // 
+            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(108, 117, 125); // gris
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.FlatAppearance.BorderSize = 0;
+            this.btnSelect.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSelect.ForeColor = System.Drawing.Color.White;
+            this.btnSelect.Location = new System.Drawing.Point(40, 250);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(280, 40);
+            this.btnSelect.TabIndex = 3;
+            this.btnSelect.Text = "Sélectionner";
+            this.btnSelect.UseVisualStyleBackColor = false;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(25, 135, 84); // vert
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(40, 320);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(130, 40);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Ajouter";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(13, 110, 253); // bleu
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(190, 320);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(130, 40);
+            this.btnEdit.TabIndex = 5;
+            this.btnEdit.Text = "Modifier";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(220, 53, 69); // rouge
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(40, 380);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(280, 40);
+            this.btnRemove.TabIndex = 6;
+            this.btnRemove.Text = "Supprimer";
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+
+            // 
+            // Controls
+            // 
+            this.Controls.Add(this.dgAnneeAcademique);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtLibelleAnneeAcademique);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtAnneeAcademiqueVal);
             this.Controls.Add(this.btnSelect);
-            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.txtAnneeAcademiqueVal);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtLibelleAnneeAcademique);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgAnneeAcademique);
-            this.Name = "frmAnneeAcademique";
-            this.Text = "AnneeAcademique";
-            this.Load += new System.EventHandler(this.frmAnneeAcademique_Load);
+            this.Controls.Add(this.btnRemove);
+
             ((System.ComponentModel.ISupportInitialize)(this.dgAnneeAcademique)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
 
         #endregion
 
