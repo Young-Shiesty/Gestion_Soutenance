@@ -71,5 +71,7 @@ namespace AppSenSoutenance.View.Parametre
             txtAnneeAcademiqueVal.Text = dgAnneeAcademique.CurrentRow.Cells[2].Value.ToString();    
 
         }
+
+       
     }
 }

@@ -1,4 +1,8 @@
-﻿namespace AppSenSoutenance
+﻿using AppSenSoutenance.Shered;
+using System;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace AppSenSoutenance
 {
     partial class frmConnexion
     {
@@ -131,6 +135,9 @@
             this.PerformLayout();
 
         }
+
+       
+
 
 
         #endregion

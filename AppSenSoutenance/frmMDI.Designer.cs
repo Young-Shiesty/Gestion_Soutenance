@@ -44,135 +44,121 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(33, 37, 41); // bleu/gris foncé
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular);
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.actionToolStripMenuItem,
-        this.parametreToolStripMenuItem,
-        this.securiteToolStripMenuItem
-    });
+            this.actionToolStripMenuItem,
+            this.parametreToolStripMenuItem,
+            this.securiteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(900, 32);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-
             // 
             // actionToolStripMenuItem
             // 
-            this.actionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.actionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.seDeconnecterToolStripMenuItem,
-        this.quitterToolStripMenuItem
-    });
+            this.seDeconnecterToolStripMenuItem,
+            this.quitterToolStripMenuItem});
+            this.actionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.actionToolStripMenuItem.Name = "actionToolStripMenuItem";
-            this.actionToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.actionToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
             this.actionToolStripMenuItem.Text = "Action";
-
             // 
             // seDeconnecterToolStripMenuItem
             // 
             this.seDeconnecterToolStripMenuItem.Name = "seDeconnecterToolStripMenuItem";
-            this.seDeconnecterToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.seDeconnecterToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
             this.seDeconnecterToolStripMenuItem.Text = "Se déconnecter";
             this.seDeconnecterToolStripMenuItem.Click += new System.EventHandler(this.seDeconnecterToolStripMenuItem_Click);
-
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
-
             // 
             // parametreToolStripMenuItem
             // 
-            this.parametreToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.parametreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.anneeAcademiqueToolStripMenuItem,
-        this.sessionToolStripMenuItem,
-        this.professeurToolStripMenuItem,
-        this.memoireToolStripMenuItem
-    });
+            this.anneeAcademiqueToolStripMenuItem,
+            this.sessionToolStripMenuItem,
+            this.professeurToolStripMenuItem,
+            this.memoireToolStripMenuItem});
+            this.parametreToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.parametreToolStripMenuItem.Name = "parametreToolStripMenuItem";
-            this.parametreToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.parametreToolStripMenuItem.Size = new System.Drawing.Size(109, 27);
             this.parametreToolStripMenuItem.Text = "Paramètres";
-
             // 
             // anneeAcademiqueToolStripMenuItem
             // 
             this.anneeAcademiqueToolStripMenuItem.Name = "anneeAcademiqueToolStripMenuItem";
-            this.anneeAcademiqueToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.anneeAcademiqueToolStripMenuItem.Size = new System.Drawing.Size(241, 28);
             this.anneeAcademiqueToolStripMenuItem.Text = "Année académique";
             this.anneeAcademiqueToolStripMenuItem.Click += new System.EventHandler(this.anneeAcademiqueToolStripMenuItem_Click);
-
             // 
             // sessionToolStripMenuItem
             // 
             this.sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
-            this.sessionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sessionToolStripMenuItem.Size = new System.Drawing.Size(241, 28);
             this.sessionToolStripMenuItem.Text = "Session";
             this.sessionToolStripMenuItem.Click += new System.EventHandler(this.sessionToolStripMenuItem_Click);
-
             // 
             // professeurToolStripMenuItem
             // 
             this.professeurToolStripMenuItem.Name = "professeurToolStripMenuItem";
-            this.professeurToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.professeurToolStripMenuItem.Text = "Professeur";
+            this.professeurToolStripMenuItem.Size = new System.Drawing.Size(241, 28);
+            this.professeurToolStripMenuItem.Text = "Utilisateur";
             this.professeurToolStripMenuItem.Click += new System.EventHandler(this.professeurToolStripMenuItem_Click);
-
             // 
             // memoireToolStripMenuItem
             // 
             this.memoireToolStripMenuItem.Name = "memoireToolStripMenuItem";
-            this.memoireToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.memoireToolStripMenuItem.Size = new System.Drawing.Size(241, 28);
             this.memoireToolStripMenuItem.Text = "Mémoire";
             this.memoireToolStripMenuItem.Click += new System.EventHandler(this.memoireToolStripMenuItem_Click);
-
             // 
             // securiteToolStripMenuItem
             // 
-            this.securiteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.securiteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-        this.utilisateurToolStripMenuItem
-    });
+            this.utilisateurToolStripMenuItem});
+            this.securiteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.securiteToolStripMenuItem.Name = "securiteToolStripMenuItem";
-            this.securiteToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.securiteToolStripMenuItem.Size = new System.Drawing.Size(85, 27);
             this.securiteToolStripMenuItem.Text = "Sécurité";
-
             // 
             // utilisateurToolStripMenuItem
             // 
             this.utilisateurToolStripMenuItem.Name = "utilisateurToolStripMenuItem";
-            this.utilisateurToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.utilisateurToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
             this.utilisateurToolStripMenuItem.Text = "Utilisateur";
             this.utilisateurToolStripMenuItem.Click += new System.EventHandler(this.utilisateurToolStripMenuItem_Click);
-
             // 
             // frmMDI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.IsMdiContainer = true;
-            this.BackColor = System.Drawing.Color.FromArgb(245, 247, 250); // fond clair comme la page de login
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(800, 480);
             this.ControlBox = false;
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMDI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SenSoutenance - Tableau de bord";
             this.Load += new System.EventHandler(this.frmMDI_Load);
-
-            this.Controls.Add(this.menuStrip1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
 

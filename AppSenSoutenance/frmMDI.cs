@@ -77,7 +77,7 @@ namespace AppSenSoutenance
         private void professeurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fermer();
-            frmProfesseur f = new frmProfesseur();
+            formUtilisateur f = new formUtilisateur();    
             f.MdiParent = this;
             f.Show();
             //pour utiliser tout l'espace dispoible dans le conteneur

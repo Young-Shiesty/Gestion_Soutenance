@@ -25,7 +25,7 @@ namespace AppSenSoutenance
         {
             BdSenSoutenanceContext db = new BdSenSoutenanceContext();
             var adminUser = db.admins.Count();
-            if (adminUser == 0)
+            if (adminUser != 0)
             {
                 Admin candidat = new Admin();
                 candidat.NomUtilisateur = "Thiam";
