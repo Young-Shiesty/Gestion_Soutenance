@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabCandidat = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.txtMatricule = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -94,6 +95,7 @@
             // 
             // tabCandidat
             // 
+            this.tabCandidat.Controls.Add(this.label16);
             this.tabCandidat.Controls.Add(this.btnRemove);
             this.tabCandidat.Controls.Add(this.txtMatricule);
             this.tabCandidat.Controls.Add(this.btnEdit);
@@ -116,20 +118,34 @@
             this.tabCandidat.Text = "Candidat";
             this.tabCandidat.UseVisualStyleBackColor = true;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label16.Location = new System.Drawing.Point(26, 356);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(78, 20);
+            this.label16.TabIndex = 48;
+            this.label16.Text = "&Password";
+            // 
             // btnRemove
             // 
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.Location = new System.Drawing.Point(267, 530);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(91, 39);
             this.btnRemove.TabIndex = 30;
             this.btnRemove.Text = "&Supprimer";
-            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // txtMatricule
             // 
-            this.txtMatricule.Location = new System.Drawing.Point(25, 386);
+            this.txtMatricule.Location = new System.Drawing.Point(26, 394);
             this.txtMatricule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMatricule.Name = "txtMatricule";
             this.txtMatricule.Size = new System.Drawing.Size(332, 26);
@@ -138,38 +154,45 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(267, 478);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(91, 39);
             this.btnEdit.TabIndex = 29;
             this.btnEdit.Text = "&Modifier";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 348);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 20);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "&Matricule";
+            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.TabIndex = 47;
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(267, 426);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(91, 39);
             this.btnAdd.TabIndex = 28;
             this.btnAdd.Text = "&Ajouter";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(25, 302);
+            this.txtEmail.Location = new System.Drawing.Point(26, 310);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(332, 26);
@@ -178,7 +201,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 262);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label4.Location = new System.Drawing.Point(26, 270);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 44;
@@ -186,7 +210,7 @@
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(25, 218);
+            this.txtTel.Location = new System.Drawing.Point(26, 226);
             this.txtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(332, 26);
@@ -195,7 +219,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 179);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label3.Location = new System.Drawing.Point(26, 187);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 20);
             this.label3.TabIndex = 43;
@@ -203,7 +228,7 @@
             // 
             // txtPrenom
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(25, 134);
+            this.txtPrenom.Location = new System.Drawing.Point(26, 142);
             this.txtPrenom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrenom.Name = "txtPrenom";
             this.txtPrenom.Size = new System.Drawing.Size(332, 26);
@@ -212,7 +237,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 95);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label2.Location = new System.Drawing.Point(26, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 42;
@@ -220,7 +246,7 @@
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(25, 50);
+            this.txtNom.Location = new System.Drawing.Point(26, 58);
             this.txtNom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(332, 26);
@@ -229,7 +255,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 11);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label1.Location = new System.Drawing.Point(26, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 20);
             this.label1.TabIndex = 41;
@@ -262,7 +289,10 @@
             // 
             // btnPSelect
             // 
-            this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnPSelect.FlatAppearance.BorderSize = 0;
+            this.btnPSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPSelect.ForeColor = System.Drawing.Color.White;
             this.btnPSelect.Location = new System.Drawing.Point(33, 449);
             this.btnPSelect.Name = "btnPSelect";
             this.btnPSelect.Size = new System.Drawing.Size(200, 38);
@@ -272,13 +302,17 @@
             // 
             // btnPsup
             // 
+            this.btnPsup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnPsup.FlatAppearance.BorderSize = 0;
+            this.btnPsup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPsup.ForeColor = System.Drawing.Color.White;
             this.btnPsup.Location = new System.Drawing.Point(274, 528);
             this.btnPsup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPsup.Name = "btnPsup";
             this.btnPsup.Size = new System.Drawing.Size(91, 39);
             this.btnPsup.TabIndex = 49;
             this.btnPsup.Text = "&Supprimer";
-            this.btnPsup.UseVisualStyleBackColor = true;
+            this.btnPsup.UseVisualStyleBackColor = false;
             // 
             // txtPSpecialite
             // 
@@ -291,17 +325,22 @@
             // 
             // btnPmod
             // 
+            this.btnPmod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnPmod.FlatAppearance.BorderSize = 0;
+            this.btnPmod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPmod.ForeColor = System.Drawing.Color.White;
             this.btnPmod.Location = new System.Drawing.Point(274, 476);
             this.btnPmod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPmod.Name = "btnPmod";
             this.btnPmod.Size = new System.Drawing.Size(91, 39);
             this.btnPmod.TabIndex = 48;
             this.btnPmod.Text = "&Modifier";
-            this.btnPmod.UseVisualStyleBackColor = true;
+            this.btnPmod.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label6.Location = new System.Drawing.Point(33, 345);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 20);
@@ -310,13 +349,17 @@
             // 
             // btnPadd
             // 
+            this.btnPadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnPadd.FlatAppearance.BorderSize = 0;
+            this.btnPadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPadd.ForeColor = System.Drawing.Color.White;
             this.btnPadd.Location = new System.Drawing.Point(274, 424);
             this.btnPadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPadd.Name = "btnPadd";
             this.btnPadd.Size = new System.Drawing.Size(91, 39);
             this.btnPadd.TabIndex = 47;
             this.btnPadd.Text = "&Ajouter";
-            this.btnPadd.UseVisualStyleBackColor = true;
+            this.btnPadd.UseVisualStyleBackColor = false;
             this.btnPadd.Click += new System.EventHandler(this.btnPadd_Click);
             // 
             // txtPemail
@@ -330,6 +373,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label7.Location = new System.Drawing.Point(33, 261);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 20);
@@ -347,6 +391,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label8.Location = new System.Drawing.Point(33, 178);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 20);
@@ -364,6 +409,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label9.Location = new System.Drawing.Point(33, 92);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 20);
@@ -381,6 +427,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label10.Location = new System.Drawing.Point(33, 9);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 20);
@@ -413,13 +460,17 @@
             // 
             // btnCsup
             // 
+            this.btnCsup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnCsup.FlatAppearance.BorderSize = 0;
+            this.btnCsup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCsup.ForeColor = System.Drawing.Color.White;
             this.btnCsup.Location = new System.Drawing.Point(274, 528);
             this.btnCsup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCsup.Name = "btnCsup";
             this.btnCsup.Size = new System.Drawing.Size(91, 39);
             this.btnCsup.TabIndex = 49;
             this.btnCsup.Text = "&Supprimer";
-            this.btnCsup.UseVisualStyleBackColor = true;
+            this.btnCsup.UseVisualStyleBackColor = false;
             this.btnCsup.Click += new System.EventHandler(this.btnCsup_Click);
             // 
             // txtDepartement
@@ -433,18 +484,23 @@
             // 
             // btnCmod
             // 
+            this.btnCmod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnCmod.FlatAppearance.BorderSize = 0;
+            this.btnCmod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCmod.ForeColor = System.Drawing.Color.White;
             this.btnCmod.Location = new System.Drawing.Point(274, 476);
             this.btnCmod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCmod.Name = "btnCmod";
             this.btnCmod.Size = new System.Drawing.Size(91, 39);
             this.btnCmod.TabIndex = 48;
             this.btnCmod.Text = "&Modifier";
-            this.btnCmod.UseVisualStyleBackColor = true;
+            this.btnCmod.UseVisualStyleBackColor = false;
             this.btnCmod.Click += new System.EventHandler(this.btnCmod_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label11.Location = new System.Drawing.Point(33, 345);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(103, 20);
@@ -453,13 +509,17 @@
             // 
             // btnCadd
             // 
+            this.btnCadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnCadd.FlatAppearance.BorderSize = 0;
+            this.btnCadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadd.ForeColor = System.Drawing.Color.White;
             this.btnCadd.Location = new System.Drawing.Point(274, 424);
             this.btnCadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCadd.Name = "btnCadd";
             this.btnCadd.Size = new System.Drawing.Size(91, 39);
             this.btnCadd.TabIndex = 47;
             this.btnCadd.Text = "&Ajouter";
-            this.btnCadd.UseVisualStyleBackColor = true;
+            this.btnCadd.UseVisualStyleBackColor = false;
             this.btnCadd.Click += new System.EventHandler(this.btnCadd_Click);
             // 
             // txtCemail
@@ -473,6 +533,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label12.Location = new System.Drawing.Point(33, 261);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(48, 20);
@@ -490,6 +551,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label13.Location = new System.Drawing.Point(33, 178);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(30, 20);
@@ -507,6 +569,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label14.Location = new System.Drawing.Point(33, 92);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(64, 20);
@@ -524,6 +587,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label15.Location = new System.Drawing.Point(33, 9);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(42, 20);
@@ -545,14 +609,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 632);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
+            this.ClientSize = new System.Drawing.Size(950, 672);
             this.ControlBox = false;
             this.Controls.Add(this.dgUtilisateur);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "formUtilisateur";
             this.Text = "Gestion Des Utilisateur";
-            
+            this.Load += new System.EventHandler(this.formUtilisateur_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabCandidat.ResumeLayout(false);
             this.tabCandidat.PerformLayout();
@@ -562,7 +627,6 @@
             this.tabChefDepatrement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUtilisateur)).EndInit();
             this.ResumeLayout(false);
-            this.Load += new System.EventHandler(this.formUtilisateur_Load);
 
         }
 
@@ -613,5 +677,6 @@
         private System.Windows.Forms.DataGridView dgUtilisateur;
         private System.Windows.Forms.Button btnPSelect;
         private System.Windows.Forms.TextBox txtDepartement;
+        private System.Windows.Forms.Label label16;
     }
 }

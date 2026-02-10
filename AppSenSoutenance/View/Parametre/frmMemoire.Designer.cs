@@ -66,6 +66,7 @@
             this.sujet.Size = new System.Drawing.Size(93, 16);
             this.sujet.TabIndex = 14;
             this.sujet.Text = "Sujet Memoire";
+            this.sujet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // cbbAnneeAcademique
             // 
@@ -83,6 +84,7 @@
             this.anneeacademique.Size = new System.Drawing.Size(126, 16);
             this.anneeacademique.TabIndex = 16;
             this.anneeacademique.Text = "Annee Academique";
+            this.anneeacademique.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // cbbSession
             // 
@@ -100,6 +102,7 @@
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 18;
             this.label3.Text = "Session";
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // btnRemove
             // 
@@ -110,6 +113,10 @@
             this.btnRemove.Text = "&Supprimer";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
             // 
             // btnAdd
             // 
@@ -120,6 +127,10 @@
             this.btnAdd.Text = "&Ajouter";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
             // 
             // btnSelect
             // 
@@ -130,11 +141,16 @@
             this.btnSelect.Text = "&Selectionner";
             this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnSelect.ForeColor = System.Drawing.Color.White;
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.FlatAppearance.BorderSize = 0;
             // 
             // frmMemoire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(1057, 612);
             this.ControlBox = false;
             this.Controls.Add(this.btnSelect);

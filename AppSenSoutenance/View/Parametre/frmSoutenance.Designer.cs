@@ -64,6 +64,7 @@
             this.label1.Size = new System.Drawing.Size(111, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Date Soutenance";
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtDateSoutenance
             // 
@@ -86,7 +87,8 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 16);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Lieu Soutenance";
+            this.label2.Text = "Lieu Soutenance"; 
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
 
             // 
             // txtResultatSoutenance
@@ -104,6 +106,7 @@
             this.label3.Size = new System.Drawing.Size(131, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Resultat Soutenance";
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtMentionSoutenance
             // 
@@ -120,6 +123,7 @@
             this.label4.Size = new System.Drawing.Size(129, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Mention Soutenance";
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtObservationSoutenance
             // 
@@ -136,6 +140,7 @@
             this.label5.Size = new System.Drawing.Size(155, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Observation Soutenance";
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // btnAjouter
             // 
@@ -146,6 +151,10 @@
             this.btnAjouter.Text = "&Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            this.btnAjouter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnAjouter.ForeColor = System.Drawing.Color.White;
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouter.FlatAppearance.BorderSize = 0;
             // 
             // btnModifier
             // 
@@ -156,6 +165,10 @@
             this.btnModifier.Text = "&Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
             this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
+            this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnModifier.ForeColor = System.Drawing.Color.White;
+            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifier.FlatAppearance.BorderSize = 0;
             // 
             // btnSupprimer
             // 
@@ -166,6 +179,10 @@
             this.btnSupprimer.Text = "&Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
+            this.btnSupprimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnSupprimer.ForeColor = System.Drawing.Color.White;
+            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupprimer.FlatAppearance.BorderSize = 0;
             // 
             // btnSelectionner
             // 
@@ -176,12 +193,16 @@
             this.btnSelectionner.Text = "&Selectionner";
             this.btnSelectionner.UseVisualStyleBackColor = true;
             this.btnSelectionner.Click += new System.EventHandler(this.btnSelectionner_Click);
+            this.btnSelectionner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnSelectionner.ForeColor = System.Drawing.Color.White;
+            this.btnSelectionner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectionner.FlatAppearance.BorderSize = 0;
             // 
             // frmSoutenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Info;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(1231, 575);
             this.ControlBox = false;
             this.Controls.Add(this.btnSelectionner);

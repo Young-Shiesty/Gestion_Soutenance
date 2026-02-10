@@ -61,6 +61,7 @@
             this.label1.Size = new System.Drawing.Size(42, 20);
             this.label1.TabIndex = 14;
             this.label1.Text = "&Nom";
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtPrename
             // 
@@ -77,6 +78,7 @@
             this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 16;
             this.label2.Text = "&Prenom";
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtTel
             // 
@@ -93,6 +95,7 @@
             this.label3.Size = new System.Drawing.Size(30, 20);
             this.label3.TabIndex = 18;
             this.label3.Text = "&Tel";
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtEmail
             // 
@@ -109,6 +112,7 @@
             this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 20;
             this.label4.Text = "&Email";
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // label5
             // 
@@ -118,6 +122,7 @@
             this.label5.Size = new System.Drawing.Size(109, 20);
             this.label5.TabIndex = 22;
             this.label5.Text = "&Mot De Passe";
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // btnAdd
             // 
@@ -128,6 +133,10 @@
             this.btnAdd.Text = "&Ajouter";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
             // 
             // btnEdit
             // 
@@ -138,6 +147,10 @@
             this.btnEdit.Text = "&Modifier";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
             // 
             // btnRemove
             // 
@@ -148,6 +161,10 @@
             this.btnRemove.Text = "&Supprimer";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
             // 
             // btnSelect
             // 
@@ -158,6 +175,10 @@
             this.btnSelect.Text = "&Selectionner";
             this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnSelect.ForeColor = System.Drawing.Color.White;
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.FlatAppearance.BorderSize = 0;
             // 
             // txtPassword
             // 
@@ -171,6 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(953, 533);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.btnRemove);

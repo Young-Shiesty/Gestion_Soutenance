@@ -35,6 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
@@ -111,6 +112,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Departement.cs" />
+    <Compile Include="Migrations\202602101344058_InitialCreate.cs" />
+    <Compile Include="Migrations\202602101344058_InitialCreate.Designer.cs">
+      <DependentUpon>202602101344058_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\ChefDepartement.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -188,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMDI.resx">
       <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202602101344058_InitialCreate.resx">
+      <DependentUpon>202602101344058_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

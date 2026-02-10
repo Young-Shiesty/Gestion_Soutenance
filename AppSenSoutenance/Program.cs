@@ -1,5 +1,6 @@
 ﻿using AppSenSoutenance.Migrations;
 using AppSenSoutenance.Models;
+using AppSenSoutenance.View.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace AppSenSoutenance
         public static void StartApp()
         {
             BdSenSoutenanceContext db = new BdSenSoutenanceContext();
-            var adminUser = db.admins.Count();
+            /*var adminUser = db.admins.Count();
             if (adminUser != 0)
             {
                 Admin candidat = new Admin();
@@ -39,6 +40,7 @@ namespace AppSenSoutenance
                 db.admins.Add(candidat);
                 db.SaveChanges();
             }
+            */
         }
     }
 }
