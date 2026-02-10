@@ -52,7 +52,7 @@
             this.dgSession.Name = "dgSession";
             this.dgSession.RowHeadersWidth = 62;
             this.dgSession.RowTemplate.Height = 28;
-            this.dgSession.Size = new System.Drawing.Size(583, 436);
+            this.dgSession.Size = new System.Drawing.Size(609, 438);
             this.dgSession.TabIndex = 0;
             // 
             // btnRemove
@@ -61,7 +61,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(230, 498);
+            this.btnRemove.Location = new System.Drawing.Point(133, 419);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(91, 39);
             this.btnRemove.TabIndex = 9;
@@ -75,7 +75,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(230, 380);
+            this.btnAdd.Location = new System.Drawing.Point(133, 301);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(91, 39);
             this.btnAdd.TabIndex = 7;
@@ -89,7 +89,7 @@
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(230, 439);
+            this.btnEdit.Location = new System.Drawing.Point(133, 360);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(91, 39);
             this.btnEdit.TabIndex = 8;
@@ -103,7 +103,7 @@
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.ForeColor = System.Drawing.Color.White;
-            this.btnSelect.Location = new System.Drawing.Point(177, 47);
+            this.btnSelect.Location = new System.Drawing.Point(207, 38);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(114, 45);
             this.btnSelect.TabIndex = 10;
@@ -150,7 +150,7 @@
             // 
             this.txtRSession.Location = new System.Drawing.Point(390, 47);
             this.txtRSession.Name = "txtRSession";
-            this.txtRSession.Size = new System.Drawing.Size(251, 26);
+            this.txtRSession.Size = new System.Drawing.Size(123, 26);
             this.txtRSession.TabIndex = 17;
             // 
             // label3
@@ -165,16 +165,16 @@
             // 
             // txtRAnneeAcademique
             // 
-            this.txtRAnneeAcademique.Location = new System.Drawing.Point(666, 47);
+            this.txtRAnneeAcademique.Location = new System.Drawing.Point(561, 47);
             this.txtRAnneeAcademique.Name = "txtRAnneeAcademique";
-            this.txtRAnneeAcademique.Size = new System.Drawing.Size(251, 26);
+            this.txtRAnneeAcademique.Size = new System.Drawing.Size(123, 26);
             this.txtRAnneeAcademique.TabIndex = 19;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
-            this.label4.Location = new System.Drawing.Point(662, 10);
+            this.label4.Location = new System.Drawing.Point(557, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 20);
             this.label4.TabIndex = 20;
@@ -186,7 +186,7 @@
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(986, 28);
+            this.btnSearch.Location = new System.Drawing.Point(766, 28);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(114, 45);
             this.btnSearch.TabIndex = 21;
@@ -199,7 +199,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(1130, 572);
+            this.ClientSize = new System.Drawing.Size(982, 575);
             this.ControlBox = false;
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtRAnneeAcademique);

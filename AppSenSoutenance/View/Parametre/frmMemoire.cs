@@ -101,5 +101,7 @@ namespace AppSenSoutenance.Views.Parametre
             db.SaveChanges();
             Effacer();
         }
+
+       
     }
 }

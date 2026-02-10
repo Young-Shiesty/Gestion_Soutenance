@@ -44,114 +44,121 @@
             // dgMemoire
             // 
             this.dgMemoire.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMemoire.Location = new System.Drawing.Point(520, 115);
+            this.dgMemoire.Location = new System.Drawing.Point(473, 51);
+            this.dgMemoire.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgMemoire.Name = "dgMemoire";
             this.dgMemoire.RowHeadersWidth = 51;
             this.dgMemoire.RowTemplate.Height = 24;
-            this.dgMemoire.Size = new System.Drawing.Size(525, 424);
+            this.dgMemoire.Size = new System.Drawing.Size(472, 387);
             this.dgMemoire.TabIndex = 1;
             // 
             // txtSujetMemoire
             // 
-            this.txtSujetMemoire.Location = new System.Drawing.Point(12, 144);
+            this.txtSujetMemoire.Location = new System.Drawing.Point(41, 113);
+            this.txtSujetMemoire.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSujetMemoire.Name = "txtSujetMemoire";
-            this.txtSujetMemoire.Size = new System.Drawing.Size(289, 22);
+            this.txtSujetMemoire.Size = new System.Drawing.Size(325, 26);
             this.txtSujetMemoire.TabIndex = 13;
             // 
             // sujet
             // 
             this.sujet.AutoSize = true;
-            this.sujet.Location = new System.Drawing.Point(12, 115);
+            this.sujet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.sujet.Location = new System.Drawing.Point(41, 62);
             this.sujet.Name = "sujet";
-            this.sujet.Size = new System.Drawing.Size(93, 16);
+            this.sujet.Size = new System.Drawing.Size(111, 20);
             this.sujet.TabIndex = 14;
             this.sujet.Text = "Sujet Memoire";
-            this.sujet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // cbbAnneeAcademique
             // 
             this.cbbAnneeAcademique.FormattingEnabled = true;
-            this.cbbAnneeAcademique.Location = new System.Drawing.Point(12, 247);
+            this.cbbAnneeAcademique.Location = new System.Drawing.Point(41, 221);
+            this.cbbAnneeAcademique.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbAnneeAcademique.Name = "cbbAnneeAcademique";
-            this.cbbAnneeAcademique.Size = new System.Drawing.Size(286, 24);
+            this.cbbAnneeAcademique.Size = new System.Drawing.Size(321, 28);
             this.cbbAnneeAcademique.TabIndex = 17;
             // 
             // anneeacademique
             // 
             this.anneeacademique.AutoSize = true;
-            this.anneeacademique.Location = new System.Drawing.Point(9, 215);
+            this.anneeacademique.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.anneeacademique.Location = new System.Drawing.Point(37, 170);
             this.anneeacademique.Name = "anneeacademique";
-            this.anneeacademique.Size = new System.Drawing.Size(126, 16);
+            this.anneeacademique.Size = new System.Drawing.Size(149, 20);
             this.anneeacademique.TabIndex = 16;
             this.anneeacademique.Text = "Annee Academique";
-            this.anneeacademique.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // cbbSession
             // 
             this.cbbSession.FormattingEnabled = true;
-            this.cbbSession.Location = new System.Drawing.Point(12, 346);
+            this.cbbSession.Location = new System.Drawing.Point(41, 331);
+            this.cbbSession.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbSession.Name = "cbbSession";
-            this.cbbSession.Size = new System.Drawing.Size(286, 24);
+            this.cbbSession.Size = new System.Drawing.Size(321, 28);
             this.cbbSession.TabIndex = 19;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 314);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label3.Location = new System.Drawing.Point(37, 280);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
+            this.label3.Size = new System.Drawing.Size(66, 20);
             this.label3.TabIndex = 18;
             this.label3.Text = "Session";
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(257, 444);
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(285, 390);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(102, 38);
+            this.btnRemove.Size = new System.Drawing.Size(115, 48);
             this.btnRemove.TabIndex = 22;
             this.btnRemove.Text = "&Supprimer";
-            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
-            this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemove.FlatAppearance.BorderSize = 0;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(24, 444);
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(54, 390);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(102, 38);
+            this.btnAdd.Size = new System.Drawing.Size(115, 48);
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "&Ajouter";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(300, 48);
+            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnSelect.FlatAppearance.BorderSize = 0;
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.ForeColor = System.Drawing.Color.White;
+            this.btnSelect.Location = new System.Drawing.Point(298, 51);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(221, 38);
+            this.btnSelect.Size = new System.Drawing.Size(139, 42);
             this.btnSelect.TabIndex = 23;
             this.btnSelect.Text = "&Selectionner";
-            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
-            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnSelect.ForeColor = System.Drawing.Color.White;
-            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.FlatAppearance.BorderSize = 0;
             // 
             // frmMemoire
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(1057, 612);
+            this.ClientSize = new System.Drawing.Size(979, 481);
             this.ControlBox = false;
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.btnRemove);
@@ -163,6 +170,7 @@
             this.Controls.Add(this.txtSujetMemoire);
             this.Controls.Add(this.sujet);
             this.Controls.Add(this.dgMemoire);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmMemoire";
             this.Text = "frmMemoire";
             this.Load += new System.EventHandler(this.frmMemoire_Load);

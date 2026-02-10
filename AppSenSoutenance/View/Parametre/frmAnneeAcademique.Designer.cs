@@ -47,29 +47,29 @@
             this.dgAnneeAcademique.Name = "dgAnneeAcademique";
             this.dgAnneeAcademique.RowHeadersWidth = 62;
             this.dgAnneeAcademique.RowTemplate.Height = 28;
-            this.dgAnneeAcademique.Size = new System.Drawing.Size(522, 422);
+            this.dgAnneeAcademique.Size = new System.Drawing.Size(484, 418);
             this.dgAnneeAcademique.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 1;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
-            this.label1.Text = "Texte";
+            this.label1.Location = new System.Drawing.Point(51, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Description";
             // 
             // txtLibelleAnneeAcademique
             // 
-            this.txtLibelleAnneeAcademique.Location = new System.Drawing.Point(55, 74);
+            this.txtLibelleAnneeAcademique.Location = new System.Drawing.Point(55, 172);
             this.txtLibelleAnneeAcademique.Name = "txtLibelleAnneeAcademique";
             this.txtLibelleAnneeAcademique.Size = new System.Drawing.Size(251, 26);
             this.txtLibelleAnneeAcademique.TabIndex = 1;
             // 
             // txtAnneeAcademiqueVal
             // 
-            this.txtAnneeAcademiqueVal.Location = new System.Drawing.Point(55, 165);
+            this.txtAnneeAcademiqueVal.Location = new System.Drawing.Point(55, 263);
             this.txtAnneeAcademiqueVal.Name = "txtAnneeAcademiqueVal";
             this.txtAnneeAcademiqueVal.Size = new System.Drawing.Size(251, 26);
             this.txtAnneeAcademiqueVal.TabIndex = 2;
@@ -77,67 +77,67 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 128);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label2.Location = new System.Drawing.Point(51, 226);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 3;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label2.Text = "Valeur";
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(215, 394);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(91, 39);
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "&Modifier";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(215, 335);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(91, 39);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "&Ajouter";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
             // 
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.Location = new System.Drawing.Point(215, 453);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(91, 39);
             this.btnRemove.TabIndex = 6;
             this.btnRemove.Text = "&Supprimer";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
-            this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(215, 12);
+            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnSelect.FlatAppearance.BorderSize = 0;
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.ForeColor = System.Drawing.Color.White;
+            this.btnSelect.Location = new System.Drawing.Point(192, 74);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(114, 45);
             this.btnSelect.TabIndex = 3;
             this.btnSelect.Text = "Selectionner";
-            this.btnSelect.UseVisualStyleBackColor = true;
-            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnSelect.ForeColor = System.Drawing.Color.White;
-            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.FlatAppearance.BorderSize = 0;
+            this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // frmAnneeAcademique

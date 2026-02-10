@@ -597,12 +597,12 @@
             // dgUtilisateur
             // 
             this.dgUtilisateur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgUtilisateur.Location = new System.Drawing.Point(443, 42);
+            this.dgUtilisateur.Location = new System.Drawing.Point(424, 41);
             this.dgUtilisateur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgUtilisateur.Name = "dgUtilisateur";
             this.dgUtilisateur.RowHeadersWidth = 62;
             this.dgUtilisateur.RowTemplate.Height = 28;
-            this.dgUtilisateur.Size = new System.Drawing.Size(736, 460);
+            this.dgUtilisateur.Size = new System.Drawing.Size(527, 580);
             this.dgUtilisateur.TabIndex = 0;
             // 
             // formUtilisateur
@@ -610,7 +610,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(950, 672);
+            this.ClientSize = new System.Drawing.Size(976, 662);
             this.ControlBox = false;
             this.Controls.Add(this.dgUtilisateur);
             this.Controls.Add(this.tabControl1);

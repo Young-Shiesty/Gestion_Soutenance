@@ -1,6 +1,7 @@
 ﻿using AppSenSoutenance.View;
 using AppSenSoutenance.View.Account;
 using AppSenSoutenance.View.Parametre;
+using AppSenSoutenance.views.parametre;
 using AppSenSoutenance.Views.Parametre;
 using Microsoft.VisualBasic.Devices;
 using System;
@@ -41,19 +42,19 @@ namespace AppSenSoutenance
         }
 
 
-        private void seDeconnecterToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnSeDeconnecter_Click(object sender, EventArgs e)
         {
             frmConnexion f = new frmConnexion();    
             f.Show();
             this.Close();
         }
 
-        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void anneeAcademiqueToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnAnnee_Click(object sender, EventArgs e)
         {
             fermer();
             //pour que s'affiche a l'interieur du MDI
@@ -64,7 +65,7 @@ namespace AppSenSoutenance
             f.WindowState = FormWindowState.Maximized;
         }
 
-        private void sessionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnSession_Click(object sender, EventArgs e)
         {
             fermer();
             frmSession f = new frmSession();
@@ -74,7 +75,7 @@ namespace AppSenSoutenance
             f.WindowState = FormWindowState.Maximized;
         }
 
-        private void professeurToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnProfesseur_Click(object sender, EventArgs e)
         {
             fermer();
             formUtilisateur f = new formUtilisateur();    
@@ -86,18 +87,23 @@ namespace AppSenSoutenance
 
         private void frmMDI_Load(object sender, EventArgs e)
         {
-            securiteToolStripMenuItem.Visible = false;
+
+            btnUtilisateur.Visible = true;
+            /*
+            btnUtilisateur.Visible = false;
+            
             if (profil == "Admin")
             {
-                securiteToolStripMenuItem.Visible = true;
-            }
+                btnUtilisateur.Visible = true;
+            }*/
+
             Computer myComputer = new Computer();
             this.Width = myComputer.Screen.Bounds.Width;
             this.Height = myComputer.Screen.Bounds.Height;
             this.Location = new Point(0, 0);
         }
         
-        private void utilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnUtilisateur_Click(object sender, EventArgs e)
         {
             fermer();
             try
@@ -111,16 +117,24 @@ namespace AppSenSoutenance
             {
                 MessageBox.Show("Impossible d'ouvrir le formulaire : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-//teste de pushh
         }
 
-        private void memoireToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnMemoire_Click(object sender, EventArgs e)
         {
             fermer();
             frmMemoire f = new frmMemoire();
             f.MdiParent = this;
             f.Show();
             //pour utiliser tout l'espace dispoible dans le conteneur
+            f.WindowState = FormWindowState.Maximized;
+        }
+
+        private void btnSoutenance_Click(object sender, EventArgs e)
+        {
+            fermer();
+            frmSoutenance f = new frmSoutenance();
+            f.MdiParent = this;
+            f.Show();
             f.WindowState = FormWindowState.Maximized;
         }
     }
