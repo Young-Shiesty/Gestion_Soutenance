@@ -124,9 +124,9 @@
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.label16.Location = new System.Drawing.Point(26, 356);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(78, 20);
+            this.label16.Size = new System.Drawing.Size(73, 20);
             this.label16.TabIndex = 48;
-            this.label16.Text = "&Password";
+            this.label16.Text = "&Matricule";
             // 
             // btnRemove
             // 
@@ -150,7 +150,6 @@
             this.txtMatricule.Name = "txtMatricule";
             this.txtMatricule.Size = new System.Drawing.Size(332, 26);
             this.txtMatricule.TabIndex = 46;
-            this.txtMatricule.UseSystemPasswordChar = true;
             // 
             // btnEdit
             // 
