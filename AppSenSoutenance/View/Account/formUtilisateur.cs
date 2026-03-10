@@ -278,7 +278,5 @@ namespace AppSenSoutenance.View.Account
             db.SaveChanges();
             ResetForm();
         }
-
-       
     }
 }

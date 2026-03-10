@@ -45,7 +45,6 @@
             this.txtNom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabProfesseur = new System.Windows.Forms.TabPage();
-            this.btnPSelect = new System.Windows.Forms.Button();
             this.btnPsup = new System.Windows.Forms.Button();
             this.txtPSpecialite = new System.Windows.Forms.TextBox();
             this.btnPmod = new System.Windows.Forms.Button();
@@ -74,6 +73,7 @@
             this.txtCnom = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dgUtilisateur = new System.Windows.Forms.DataGridView();
+            this.btnPSelect = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabCandidat.SuspendLayout();
             this.tabProfesseur.SuspendLayout();
@@ -134,7 +134,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(267, 530);
+            this.btnRemove.Location = new System.Drawing.Point(267, 500);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(91, 39);
@@ -157,7 +157,7 @@
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(267, 478);
+            this.btnEdit.Location = new System.Drawing.Point(149, 500);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(91, 39);
@@ -180,7 +180,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(267, 426);
+            this.btnAdd.Location = new System.Drawing.Point(26, 500);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(91, 39);
@@ -286,26 +286,13 @@
             this.tabProfesseur.Text = "Professeur";
             this.tabProfesseur.UseVisualStyleBackColor = true;
             // 
-            // btnPSelect
-            // 
-            this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnPSelect.FlatAppearance.BorderSize = 0;
-            this.btnPSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPSelect.ForeColor = System.Drawing.Color.White;
-            this.btnPSelect.Location = new System.Drawing.Point(33, 449);
-            this.btnPSelect.Name = "btnPSelect";
-            this.btnPSelect.Size = new System.Drawing.Size(200, 38);
-            this.btnPSelect.TabIndex = 60;
-            this.btnPSelect.Text = "&Selectionner";
-            this.btnPSelect.UseVisualStyleBackColor = false;
-            // 
             // btnPsup
             // 
             this.btnPsup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
             this.btnPsup.FlatAppearance.BorderSize = 0;
             this.btnPsup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPsup.ForeColor = System.Drawing.Color.White;
-            this.btnPsup.Location = new System.Drawing.Point(274, 528);
+            this.btnPsup.Location = new System.Drawing.Point(274, 516);
             this.btnPsup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPsup.Name = "btnPsup";
             this.btnPsup.Size = new System.Drawing.Size(91, 39);
@@ -328,7 +315,7 @@
             this.btnPmod.FlatAppearance.BorderSize = 0;
             this.btnPmod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPmod.ForeColor = System.Drawing.Color.White;
-            this.btnPmod.Location = new System.Drawing.Point(274, 476);
+            this.btnPmod.Location = new System.Drawing.Point(153, 516);
             this.btnPmod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPmod.Name = "btnPmod";
             this.btnPmod.Size = new System.Drawing.Size(91, 39);
@@ -352,7 +339,7 @@
             this.btnPadd.FlatAppearance.BorderSize = 0;
             this.btnPadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPadd.ForeColor = System.Drawing.Color.White;
-            this.btnPadd.Location = new System.Drawing.Point(274, 424);
+            this.btnPadd.Location = new System.Drawing.Point(20, 516);
             this.btnPadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPadd.Name = "btnPadd";
             this.btnPadd.Size = new System.Drawing.Size(91, 39);
@@ -463,7 +450,7 @@
             this.btnCsup.FlatAppearance.BorderSize = 0;
             this.btnCsup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCsup.ForeColor = System.Drawing.Color.White;
-            this.btnCsup.Location = new System.Drawing.Point(274, 528);
+            this.btnCsup.Location = new System.Drawing.Point(274, 517);
             this.btnCsup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCsup.Name = "btnCsup";
             this.btnCsup.Size = new System.Drawing.Size(91, 39);
@@ -487,7 +474,7 @@
             this.btnCmod.FlatAppearance.BorderSize = 0;
             this.btnCmod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCmod.ForeColor = System.Drawing.Color.White;
-            this.btnCmod.Location = new System.Drawing.Point(274, 476);
+            this.btnCmod.Location = new System.Drawing.Point(163, 517);
             this.btnCmod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCmod.Name = "btnCmod";
             this.btnCmod.Size = new System.Drawing.Size(91, 39);
@@ -512,7 +499,7 @@
             this.btnCadd.FlatAppearance.BorderSize = 0;
             this.btnCadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadd.ForeColor = System.Drawing.Color.White;
-            this.btnCadd.Location = new System.Drawing.Point(274, 424);
+            this.btnCadd.Location = new System.Drawing.Point(33, 517);
             this.btnCadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCadd.Name = "btnCadd";
             this.btnCadd.Size = new System.Drawing.Size(91, 39);
@@ -604,6 +591,19 @@
             this.dgUtilisateur.Size = new System.Drawing.Size(527, 580);
             this.dgUtilisateur.TabIndex = 0;
             // 
+            // btnPSelect
+            // 
+            this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnPSelect.FlatAppearance.BorderSize = 0;
+            this.btnPSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPSelect.ForeColor = System.Drawing.Color.White;
+            this.btnPSelect.Location = new System.Drawing.Point(153, 447);
+            this.btnPSelect.Name = "btnPSelect";
+            this.btnPSelect.Size = new System.Drawing.Size(107, 38);
+            this.btnPSelect.TabIndex = 60;
+            this.btnPSelect.Text = "&Selectionner";
+            this.btnPSelect.UseVisualStyleBackColor = false;
+            // 
             // formUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -674,8 +674,8 @@
         private System.Windows.Forms.TextBox txtCnom;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dgUtilisateur;
-        private System.Windows.Forms.Button btnPSelect;
         private System.Windows.Forms.TextBox txtDepartement;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnPSelect;
     }
 }

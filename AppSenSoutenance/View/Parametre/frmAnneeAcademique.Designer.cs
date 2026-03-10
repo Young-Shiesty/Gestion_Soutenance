@@ -43,7 +43,7 @@
             // dgAnneeAcademique
             // 
             this.dgAnneeAcademique.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgAnneeAcademique.Location = new System.Drawing.Point(338, 74);
+            this.dgAnneeAcademique.Location = new System.Drawing.Point(376, 54);
             this.dgAnneeAcademique.Name = "dgAnneeAcademique";
             this.dgAnneeAcademique.RowHeadersWidth = 62;
             this.dgAnneeAcademique.RowTemplate.Height = 28;
@@ -83,6 +83,7 @@
             this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Valeur";
+
             // 
             // btnEdit
             // 
@@ -90,9 +91,9 @@
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(215, 394);
+            this.btnEdit.Location = new System.Drawing.Point(151, 491);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(91, 39);
+            this.btnEdit.Size = new System.Drawing.Size(105, 39);
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "&Modifier";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -104,9 +105,9 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(215, 335);
+            this.btnAdd.Location = new System.Drawing.Point(15, 491);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(91, 39);
+            this.btnAdd.Size = new System.Drawing.Size(105, 39);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "&Ajouter";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -118,9 +119,9 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(215, 453);
+            this.btnRemove.Location = new System.Drawing.Point(288, 491);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(91, 39);
+            this.btnRemove.Size = new System.Drawing.Size(105, 39);
             this.btnRemove.TabIndex = 6;
             this.btnRemove.Text = "&Supprimer";
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -132,9 +133,9 @@
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.ForeColor = System.Drawing.Color.White;
-            this.btnSelect.Location = new System.Drawing.Point(192, 74);
+            this.btnSelect.Location = new System.Drawing.Point(151, 390);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(114, 45);
+            this.btnSelect.Size = new System.Drawing.Size(110, 45);
             this.btnSelect.TabIndex = 3;
             this.btnSelect.Text = "Selectionner";
             this.btnSelect.UseVisualStyleBackColor = false;
