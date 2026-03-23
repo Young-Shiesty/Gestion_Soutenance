@@ -32,7 +32,6 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.btnSelect = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSession = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.dgSession.RowTemplate.Height = 28;
             this.dgSession.Size = new System.Drawing.Size(609, 438);
             this.dgSession.TabIndex = 0;
+            this.dgSession.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgSession_CellClick);
             // 
             // btnRemove
             // 
@@ -61,7 +61,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(133, 419);
+            this.btnRemove.Location = new System.Drawing.Point(253, 360);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(91, 39);
             this.btnRemove.TabIndex = 9;
@@ -75,7 +75,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(133, 301);
+            this.btnAdd.Location = new System.Drawing.Point(12, 360);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(91, 39);
             this.btnAdd.TabIndex = 7;
@@ -96,20 +96,6 @@
             this.btnEdit.Text = "&Modifier";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnSelect.FlatAppearance.BorderSize = 0;
-            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.ForeColor = System.Drawing.Color.White;
-            this.btnSelect.Location = new System.Drawing.Point(207, 38);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(114, 45);
-            this.btnSelect.TabIndex = 10;
-            this.btnSelect.Text = "Selectionner";
-            this.btnSelect.UseVisualStyleBackColor = false;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // label2
             // 
@@ -210,7 +196,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSession);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
@@ -230,7 +215,6 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSession;
         private System.Windows.Forms.Label label1;

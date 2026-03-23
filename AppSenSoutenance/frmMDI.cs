@@ -40,10 +40,26 @@ namespace AppSenSoutenance
                 chform.Close();
             }
         }
-
+        private void OuvrirFormulaire(Form formulaire)
+        {
+            try
+            {
+                fermer();
+                formulaire.MdiParent = this;
+                formulaire.Show();
+                formulaire.WindowState = FormWindowState.Maximized;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Impossible d'ouvrir le formulaire : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void btnSeDeconnecter_Click(object sender, EventArgs e)
         {
+            DialogResult confirm = MessageBox.Show("Voulez-vous vraiment vous déconnecter ?",
+            "Déconnexion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.No) return;
             frmConnexion f = new frmConnexion();    
             f.Show();
             this.Close();
@@ -51,43 +67,26 @@ namespace AppSenSoutenance
 
         private void btnQuitter_Click(object sender, EventArgs e)
         {
+              DialogResult confirm = MessageBox.Show("Voulez-vous vraiment quitter l'application ?",
+             "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.No) return;
             Application.Exit();
         }
 
         private void btnAnnee_Click(object sender, EventArgs e)
         {
-            fermer();
-            //pour que s'affiche a l'interieur du MDI
-            frmAnneeAcademique f = new frmAnneeAcademique();
-            f.MdiParent = this;
-            f.Show();
-            //pour utiliser tout l'espace dispoible dans le conteneur
-            f.WindowState = FormWindowState.Maximized;
+            OuvrirFormulaire(new frmAnneeAcademique());
         }
 
         private void btnSession_Click(object sender, EventArgs e)
         {
-            fermer();
-            frmSession f = new frmSession();
-            f.MdiParent = this;
-            f.Show();
-            //pour utiliser tout l'espace dispoible dans le conteneur
-            f.WindowState = FormWindowState.Maximized;
+            OuvrirFormulaire(new frmSession());
         }
 
-        private void btnProfesseur_Click(object sender, EventArgs e)
-        {
-            fermer();
-            formUtilisateur f = new formUtilisateur();    
-            f.MdiParent = this;
-            f.Show();
-            //pour utiliser tout l'espace dispoible dans le conteneur
-            f.WindowState = FormWindowState.Maximized;
-        }
+        
 
         private void frmMDI_Load(object sender, EventArgs e)
         {
-
             btnUtilisateur.Visible = true;
             /*
             btnUtilisateur.Visible = false;
@@ -102,40 +101,20 @@ namespace AppSenSoutenance
             this.Height = myComputer.Screen.Bounds.Height;
             this.Location = new Point(0, 0);
         }
-        
-        private void btnUtilisateur_Click(object sender, EventArgs e)
-        {
-            fermer();
-            try
-            {
-                formUtilisateur f = new formUtilisateur();
-                f.MdiParent = this;
-                f.Show();
-                f.WindowState = FormWindowState.Maximized;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Impossible d'ouvrir le formulaire : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void btnMemoire_Click(object sender, EventArgs e)
         {
-            fermer();
-            frmMemoire f = new frmMemoire();
-            f.MdiParent = this;
-            f.Show();
-            //pour utiliser tout l'espace dispoible dans le conteneur
-            f.WindowState = FormWindowState.Maximized;
+            OuvrirFormulaire(new frmMemoire());
         }
 
         private void btnSoutenance_Click(object sender, EventArgs e)
         {
-            fermer();
-            frmSoutenance f = new frmSoutenance();
-            f.MdiParent = this;
-            f.Show();
-            f.WindowState = FormWindowState.Maximized;
+            OuvrirFormulaire(new frmSoutenance());
+        }
+
+        private void btnUtilisateur_Click_1(object sender, EventArgs e)
+        {
+            OuvrirFormulaire(new formUtilisateur());
         }
     }
 }

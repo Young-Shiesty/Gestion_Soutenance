@@ -23,7 +23,41 @@ namespace AppSenSoutenance.views.parametre
         {
             dgSoutenance.DataSource = db.soutenances.ToList();
         }
-        
+
+        private bool ChampsValides()
+        {
+            if (string.IsNullOrWhiteSpace(txtDateSoutenance.Text))
+            {
+                MessageBox.Show("Veuillez saisir la date de soutenance.", "Champ vide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtDateSoutenance.Focus();
+                return false;
+            }
+            if (!DateTime.TryParse(txtDateSoutenance.Text, out _))
+            {
+                MessageBox.Show("La date saisie n'est pas valide. Format attendu : jj/mm/aaaa", "Date invalide", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDateSoutenance.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(txtLieuSoutenance.Text))
+            {
+                MessageBox.Show("Veuillez saisir le lieu de soutenance.", "Champ vide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtLieuSoutenance.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(txtResultatSoutenance.Text))
+            {
+                MessageBox.Show("Veuillez saisir le résultat.", "Champ vide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtResultatSoutenance.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(txtMentionSoutenance.Text))
+            {
+                MessageBox.Show("Veuillez saisir la mention.", "Champ vide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMentionSoutenance.Focus();
+                return false;
+            }
+            return true;
+        }
 
         //la fonction effacer
         public void effacer()
@@ -40,14 +74,14 @@ namespace AppSenSoutenance.views.parametre
         //fonction ajouter soutenance  en convertissant la fonction date time
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+            
             DateTime dateSoutenance;
 
             if (!DateTime.TryParse(txtDateSoutenance.Text, out dateSoutenance))
             {
-              
                 return;
             }
-
+            if (!ChampsValides()) return;
             Soutenance soutenance = new Soutenance()
             {
                 DateSoutenance = dateSoutenance,
@@ -66,6 +100,12 @@ namespace AppSenSoutenance.views.parametre
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
+            if (dgSoutenance.CurrentRow == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une soutenance à modifier.", "Aucune sélection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!ChampsValides()) return;
             int? id = int.Parse(dgSoutenance.CurrentRow.Cells[0].Value.ToString());
             //La méthode Find() permet de chercher un objet spécifique dans la collection
             //ou la table (ici db.Soutenances) en fonction de son identifiant (id).
@@ -79,34 +119,42 @@ namespace AppSenSoutenance.views.parametre
             soutenance.ObservationsSoutenance = txtObservationSoutenance.Text;
             db.SaveChanges();
             effacer();
-
-
-
         }
         //supprimer une soutenance 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
+            if (dgSoutenance.CurrentRow == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une soutenance à supprimer.", "Aucune sélection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            DialogResult confirm = MessageBox.Show("Voulez-vous vraiment supprimer cette soutenance ?",
+            "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.No) return;
             int? id = int.Parse(dgSoutenance.CurrentRow.Cells[0].Value.ToString());
             Soutenance soutenance = db.soutenances.Find(id);
             db.soutenances.Remove(soutenance);
             db.SaveChanges();
             effacer();
-
-
         }
         //pour selectionner une soutenance
 
-        private void btnSelectionner_Click(object sender, EventArgs e)
+        private void dgSoutenance_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //Le Value fait référence à la valeur contenue dans la cellule de la ligne
-            //sélectionnée du DataGridView (dgSoutenance).
-            //dgSoutenance.CurrentRow :
-            //dgSoutenance.CurrentRow :
-            txtDateSoutenance.Text = dgSoutenance.CurrentRow.Cells[1].Value.ToString();
-            txtLieuSoutenance.Text = dgSoutenance.CurrentRow.Cells[2].Value.ToString();
-            txtMentionSoutenance.Text = dgSoutenance.CurrentRow.Cells[3].Value.ToString();
-            txtObservationSoutenance.Text = dgSoutenance.CurrentRow.Cells[4].Value.ToString();
-            txtResultatSoutenance.Text = dgSoutenance.CurrentRow.Cells[5].Value.ToString();
+            if (dgSoutenance.CurrentRow == null) return;
+
+            int id = int.Parse(dgSoutenance.CurrentRow.Cells[0].Value.ToString());
+            Soutenance soutenance = db.soutenances.Find(id);
+
+            if (soutenance == null) return;
+
+            txtDateSoutenance.Text = soutenance.DateSoutenance.ToString("dd/MM/yyyy");
+            txtLieuSoutenance.Text = soutenance.LieuSoutenance;
+            txtResultatSoutenance.Text = soutenance.ResultatSoutenance;
+            txtMentionSoutenance.Text = soutenance.MentionSoutenance;
+            txtObservationSoutenance.Text = soutenance.ObservationsSoutenance;
         }
+
+        
     }
 }

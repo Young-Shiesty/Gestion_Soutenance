@@ -42,170 +42,163 @@
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
-            this.btnSelectionner = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgSoutenance)).BeginInit();
             this.SuspendLayout();
             // 
             // dgSoutenance
             // 
             this.dgSoutenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgSoutenance.Location = new System.Drawing.Point(392, -2);
+            this.dgSoutenance.Location = new System.Drawing.Point(441, -2);
+            this.dgSoutenance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgSoutenance.Name = "dgSoutenance";
             this.dgSoutenance.RowHeadersWidth = 51;
             this.dgSoutenance.RowTemplate.Height = 24;
-            this.dgSoutenance.Size = new System.Drawing.Size(905, 579);
+            this.dgSoutenance.Size = new System.Drawing.Size(1018, 724);
             this.dgSoutenance.TabIndex = 0;
+            this.dgSoutenance.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgSoutenance_CellClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 96);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label1.Location = new System.Drawing.Point(45, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Date Soutenance";
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtDateSoutenance
             // 
-            this.txtDateSoutenance.Location = new System.Drawing.Point(43, 127);
+            this.txtDateSoutenance.Location = new System.Drawing.Point(48, 159);
+            this.txtDateSoutenance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDateSoutenance.Name = "txtDateSoutenance";
-            this.txtDateSoutenance.Size = new System.Drawing.Size(283, 22);
+            this.txtDateSoutenance.Size = new System.Drawing.Size(318, 26);
             this.txtDateSoutenance.TabIndex = 1;
             // 
             // txtLieuSoutenance
             // 
-            this.txtLieuSoutenance.Location = new System.Drawing.Point(43, 201);
+            this.txtLieuSoutenance.Location = new System.Drawing.Point(48, 251);
+            this.txtLieuSoutenance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLieuSoutenance.Name = "txtLieuSoutenance";
-            this.txtLieuSoutenance.Size = new System.Drawing.Size(283, 22);
+            this.txtLieuSoutenance.Size = new System.Drawing.Size(318, 26);
             this.txtLieuSoutenance.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 170);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Lieu Soutenance"; 
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
-
+            this.label2.Location = new System.Drawing.Point(45, 212);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Lieu Soutenance";
             // 
             // txtResultatSoutenance
             // 
-            this.txtResultatSoutenance.Location = new System.Drawing.Point(43, 295);
+            this.txtResultatSoutenance.Location = new System.Drawing.Point(48, 369);
+            this.txtResultatSoutenance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtResultatSoutenance.Name = "txtResultatSoutenance";
-            this.txtResultatSoutenance.Size = new System.Drawing.Size(283, 22);
+            this.txtResultatSoutenance.Size = new System.Drawing.Size(318, 26);
             this.txtResultatSoutenance.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 248);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label3.Location = new System.Drawing.Point(45, 310);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 16);
+            this.label3.Size = new System.Drawing.Size(160, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Resultat Soutenance";
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtMentionSoutenance
             // 
-            this.txtMentionSoutenance.Location = new System.Drawing.Point(43, 361);
+            this.txtMentionSoutenance.Location = new System.Drawing.Point(48, 451);
+            this.txtMentionSoutenance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMentionSoutenance.Name = "txtMentionSoutenance";
-            this.txtMentionSoutenance.Size = new System.Drawing.Size(283, 22);
+            this.txtMentionSoutenance.Size = new System.Drawing.Size(318, 26);
             this.txtMentionSoutenance.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 341);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label4.Location = new System.Drawing.Point(60, 426);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 16);
+            this.label4.Size = new System.Drawing.Size(157, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Mention Soutenance";
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // txtObservationSoutenance
             // 
-            this.txtObservationSoutenance.Location = new System.Drawing.Point(43, 460);
+            this.txtObservationSoutenance.Location = new System.Drawing.Point(48, 575);
+            this.txtObservationSoutenance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtObservationSoutenance.Name = "txtObservationSoutenance";
-            this.txtObservationSoutenance.Size = new System.Drawing.Size(283, 22);
+            this.txtObservationSoutenance.Size = new System.Drawing.Size(318, 26);
             this.txtObservationSoutenance.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(63, 416);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.label5.Location = new System.Drawing.Point(71, 520);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 16);
+            this.label5.Size = new System.Drawing.Size(185, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Observation Soutenance";
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(43, 529);
+            this.btnAjouter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnAjouter.FlatAppearance.BorderSize = 0;
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouter.ForeColor = System.Drawing.Color.White;
+            this.btnAjouter.Location = new System.Drawing.Point(48, 661);
+            this.btnAjouter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(82, 23);
+            this.btnAjouter.Size = new System.Drawing.Size(92, 29);
             this.btnAjouter.TabIndex = 6;
             this.btnAjouter.Text = "&Ajouter";
-            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.UseVisualStyleBackColor = false;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
-            this.btnAjouter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnAjouter.ForeColor = System.Drawing.Color.White;
-            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouter.FlatAppearance.BorderSize = 0;
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(164, 529);
+            this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
+            this.btnModifier.FlatAppearance.BorderSize = 0;
+            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifier.ForeColor = System.Drawing.Color.White;
+            this.btnModifier.Location = new System.Drawing.Point(184, 661);
+            this.btnModifier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(81, 23);
+            this.btnModifier.Size = new System.Drawing.Size(91, 29);
             this.btnModifier.TabIndex = 7;
             this.btnModifier.Text = "&Modifier";
-            this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.UseVisualStyleBackColor = false;
             this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
-            this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnModifier.ForeColor = System.Drawing.Color.White;
-            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModifier.FlatAppearance.BorderSize = 0;
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(293, 529);
+            this.btnSupprimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
+            this.btnSupprimer.FlatAppearance.BorderSize = 0;
+            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupprimer.ForeColor = System.Drawing.Color.White;
+            this.btnSupprimer.Location = new System.Drawing.Point(330, 661);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(81, 23);
+            this.btnSupprimer.Size = new System.Drawing.Size(91, 29);
             this.btnSupprimer.TabIndex = 8;
             this.btnSupprimer.Text = "&Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.UseVisualStyleBackColor = false;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
-            this.btnSupprimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(46)))));
-            this.btnSupprimer.ForeColor = System.Drawing.Color.White;
-            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupprimer.FlatAppearance.BorderSize = 0;
-            // 
-            // btnSelectionner
-            // 
-            this.btnSelectionner.Location = new System.Drawing.Point(43, 31);
-            this.btnSelectionner.Name = "btnSelectionner";
-            this.btnSelectionner.Size = new System.Drawing.Size(230, 23);
-            this.btnSelectionner.TabIndex = 9;
-            this.btnSelectionner.Text = "&Selectionner";
-            this.btnSelectionner.UseVisualStyleBackColor = true;
-            this.btnSelectionner.Click += new System.EventHandler(this.btnSelectionner_Click);
-            this.btnSelectionner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnSelectionner.ForeColor = System.Drawing.Color.White;
-            this.btnSelectionner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectionner.FlatAppearance.BorderSize = 0;
             // 
             // frmSoutenance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(1231, 575);
+            this.ClientSize = new System.Drawing.Size(1385, 719);
             this.ControlBox = false;
-            this.Controls.Add(this.btnSelectionner);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.btnAjouter);
@@ -221,6 +214,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgSoutenance);
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmSoutenance";
             ((System.ComponentModel.ISupportInitialize)(this.dgSoutenance)).EndInit();
             this.ResumeLayout(false);
@@ -244,6 +238,5 @@
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Button btnSupprimer;
-        private System.Windows.Forms.Button btnSelectionner;
     }
 }

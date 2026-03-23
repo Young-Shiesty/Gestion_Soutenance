@@ -36,7 +36,6 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.btnSelect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgAnneeAcademique)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +48,7 @@
             this.dgAnneeAcademique.RowTemplate.Height = 28;
             this.dgAnneeAcademique.Size = new System.Drawing.Size(484, 418);
             this.dgAnneeAcademique.TabIndex = 0;
+            this.dgAnneeAcademique.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgAnneeAcademique_CellClick);
             // 
             // label1
             // 
@@ -83,7 +83,6 @@
             this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Valeur";
-
             // 
             // btnEdit
             // 
@@ -127,20 +126,6 @@
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // btnSelect
-            // 
-            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnSelect.FlatAppearance.BorderSize = 0;
-            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.ForeColor = System.Drawing.Color.White;
-            this.btnSelect.Location = new System.Drawing.Point(151, 390);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(110, 45);
-            this.btnSelect.TabIndex = 3;
-            this.btnSelect.Text = "Selectionner";
-            this.btnSelect.UseVisualStyleBackColor = false;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
-            // 
             // frmAnneeAcademique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -148,7 +133,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(872, 558);
             this.ControlBox = false;
-            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
@@ -176,6 +160,5 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.Button btnSelect;
     }
 }

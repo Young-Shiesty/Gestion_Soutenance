@@ -40,8 +40,28 @@ namespace AppSenSoutenance.View.Parametre
             Effacer();
         }
 
+        private bool ChampsValides()
+        {
+            if (string.IsNullOrWhiteSpace(txtSession.Text))
+            {
+                MessageBox.Show("Veuillez saisir le libellé de la session.", "Champ vide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSession.Focus();
+                return false;
+            }
+
+            if (cbbAnneeAcademique.SelectedValue == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une année académique.", "Champ vide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbbAnneeAcademique.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (!ChampsValides()) return;
             Session session = new Session();
             session.LibelleSession = txtSession.Text;
             session.IdAnneeAcademique = int.Parse(cbbAnneeAcademique.SelectedValue.ToString());
@@ -52,7 +72,6 @@ namespace AppSenSoutenance.View.Parametre
 
         private void Effacer()
         {
-
             txtSession.Clear();
             cbbAnneeAcademique.SelectedValue = "";
            // dgSession.DataSource = db.session.ToList();
@@ -60,19 +79,29 @@ namespace AppSenSoutenance.View.Parametre
             cbbAnneeAcademique.DisplayMember = "Text";
             cbbAnneeAcademique.ValueMember = "Value";
             txtSession.Focus();
-        } 
-
-        private void btnSelect_Click(object sender, EventArgs e)
-        {
-            int? id = int.Parse(dgSession.CurrentRow.Cells[0].Value.ToString());
-            Session session = db.session.Find(id);
-            txtSession.Text = session.LibelleSession;
-            cbbAnneeAcademique.SelectedValue = session.IdAnneeAcademique;
-            
         }
 
+        private void dgSession_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgSession.CurrentRow == null) return;
+
+            int id = int.Parse(dgSession.CurrentRow.Cells[0].Value.ToString());
+            Session session = db.session.Find(id);
+
+            if (session == null) return;
+
+            txtSession.Text = session.LibelleSession;
+            cbbAnneeAcademique.SelectedValue = session.IdAnneeAcademique;
+        }
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (dgSession.CurrentRow == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une session à modifier.", "Aucune sélection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!ChampsValides()) return;
+
             int? id = int.Parse(dgSession.CurrentRow.Cells[0].Value.ToString());
             Session session = db.session.Find(id);
             session.LibelleSession= txtSession.Text;
@@ -83,6 +112,16 @@ namespace AppSenSoutenance.View.Parametre
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            if (dgSession.CurrentRow == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une session à supprimer.", "Aucune sélection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirm = MessageBox.Show("Voulez-vous vraiment supprimer cette session ?",
+            "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm == DialogResult.No) return;
             int?id = int.Parse(dgSession.CurrentRow.Cells[0].Value.ToString());
             Session session = db.session.Find(id);
             db.session.Remove(session); 
@@ -92,18 +131,27 @@ namespace AppSenSoutenance.View.Parametre
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtRSession.Text) &&
+       string.IsNullOrWhiteSpace(txtRAnneeAcademique.Text))
+            {
+                MessageBox.Show("Veuillez saisir au moins un critère de recherche.", "Recherche vide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtRSession.Focus();
+                return;
+            }
             var liste = db.session.ToList();
-
-            if (!string.IsNullOrEmpty(txtRSession.Text)){
+            if (!string.IsNullOrWhiteSpace(txtRSession.Text))
+            {
                 liste = liste.Where(s => s.LibelleSession.Contains(txtRSession.Text)).ToList();
             }
-            if(txtRAnneeAcademique.Text != "")
+            if (!string.IsNullOrWhiteSpace(txtRAnneeAcademique.Text))
             {
                 liste = liste.Where(s => s.AnneeAcademique.LibelleAnneeAcademique.Contains(txtRAnneeAcademique.Text)).ToList();
             }
-            
+            if (liste.Count == 0)
+            {
+                MessageBox.Show("Aucun résultat trouvé.", "Recherche", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             dgSession.DataSource = liste;
-
         }
 
       
