@@ -55,9 +55,8 @@
             this.panelSidebar.Controls.Add(this.btnMemoire);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
-            this.panelSidebar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(281, 600);
+            this.panelSidebar.Size = new System.Drawing.Size(250, 506);
             this.panelSidebar.TabIndex = 0;
             // 
             // btnQuitter
@@ -68,10 +67,9 @@
             this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitter.ForeColor = System.Drawing.Color.White;
-            this.btnQuitter.Location = new System.Drawing.Point(0, 500);
-            this.btnQuitter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnQuitter.Location = new System.Drawing.Point(0, 426);
             this.btnQuitter.Name = "btnQuitter";
-            this.btnQuitter.Size = new System.Drawing.Size(281, 50);
+            this.btnQuitter.Size = new System.Drawing.Size(250, 40);
             this.btnQuitter.TabIndex = 7;
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.UseVisualStyleBackColor = true;
@@ -85,10 +83,9 @@
             this.btnSeDeconnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeDeconnecter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeDeconnecter.ForeColor = System.Drawing.Color.White;
-            this.btnSeDeconnecter.Location = new System.Drawing.Point(0, 550);
-            this.btnSeDeconnecter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSeDeconnecter.Location = new System.Drawing.Point(0, 466);
             this.btnSeDeconnecter.Name = "btnSeDeconnecter";
-            this.btnSeDeconnecter.Size = new System.Drawing.Size(281, 50);
+            this.btnSeDeconnecter.Size = new System.Drawing.Size(250, 40);
             this.btnSeDeconnecter.TabIndex = 6;
             this.btnSeDeconnecter.Text = "Se déconnecter";
             this.btnSeDeconnecter.UseVisualStyleBackColor = true;
@@ -99,10 +96,9 @@
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(20)))), ((int)(((byte)(120)))));
             this.panelLogo.Controls.Add(this.lblTitle);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 375);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelLogo.Location = new System.Drawing.Point(0, 300);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(281, 125);
+            this.panelLogo.Size = new System.Drawing.Size(250, 100);
             this.panelLogo.TabIndex = 0;
             // 
             // lblTitle
@@ -110,9 +106,9 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(25, 42);
+            this.lblTitle.Location = new System.Drawing.Point(22, 34);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(218, 38);
+            this.lblTitle.Size = new System.Drawing.Size(188, 32);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "SenSoutenance";
             // 
@@ -124,11 +120,10 @@
             this.btnAnnee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnnee.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnnee.ForeColor = System.Drawing.Color.White;
-            this.btnAnnee.Location = new System.Drawing.Point(0, 300);
-            this.btnAnnee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAnnee.Location = new System.Drawing.Point(0, 240);
             this.btnAnnee.Name = "btnAnnee";
-            this.btnAnnee.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnAnnee.Size = new System.Drawing.Size(281, 75);
+            this.btnAnnee.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAnnee.Size = new System.Drawing.Size(250, 60);
             this.btnAnnee.TabIndex = 1;
             this.btnAnnee.Text = "Années Académiques";
             this.btnAnnee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -143,11 +138,10 @@
             this.btnSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSession.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSession.ForeColor = System.Drawing.Color.White;
-            this.btnSession.Location = new System.Drawing.Point(0, 225);
-            this.btnSession.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSession.Location = new System.Drawing.Point(0, 180);
             this.btnSession.Name = "btnSession";
-            this.btnSession.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnSession.Size = new System.Drawing.Size(281, 75);
+            this.btnSession.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSession.Size = new System.Drawing.Size(250, 60);
             this.btnSession.TabIndex = 2;
             this.btnSession.Text = "Sessions";
             this.btnSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,16 +156,15 @@
             this.btnUtilisateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUtilisateur.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUtilisateur.ForeColor = System.Drawing.Color.White;
-            this.btnUtilisateur.Location = new System.Drawing.Point(0, 150);
-            this.btnUtilisateur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnUtilisateur.Location = new System.Drawing.Point(0, 120);
             this.btnUtilisateur.Name = "btnUtilisateur";
-            this.btnUtilisateur.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnUtilisateur.Size = new System.Drawing.Size(281, 75);
+            this.btnUtilisateur.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnUtilisateur.Size = new System.Drawing.Size(250, 60);
             this.btnUtilisateur.TabIndex = 3;
             this.btnUtilisateur.Text = "Utilisateurs";
             this.btnUtilisateur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUtilisateur.UseVisualStyleBackColor = true;
-            this.btnUtilisateur.Click += new System.EventHandler(this.btnUtilisateur_Click_1);
+            this.btnUtilisateur.Click += new System.EventHandler(this.btnProfesseur_Click);
             // 
             // btnSoutenance
             // 
@@ -181,11 +174,10 @@
             this.btnSoutenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSoutenance.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSoutenance.ForeColor = System.Drawing.Color.White;
-            this.btnSoutenance.Location = new System.Drawing.Point(0, 75);
-            this.btnSoutenance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSoutenance.Location = new System.Drawing.Point(0, 60);
             this.btnSoutenance.Name = "btnSoutenance";
-            this.btnSoutenance.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnSoutenance.Size = new System.Drawing.Size(281, 75);
+            this.btnSoutenance.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSoutenance.Size = new System.Drawing.Size(250, 60);
             this.btnSoutenance.TabIndex = 4;
             this.btnSoutenance.Text = "Soutenances";
             this.btnSoutenance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,10 +193,9 @@
             this.btnMemoire.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMemoire.ForeColor = System.Drawing.Color.White;
             this.btnMemoire.Location = new System.Drawing.Point(0, 0);
-            this.btnMemoire.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMemoire.Name = "btnMemoire";
-            this.btnMemoire.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnMemoire.Size = new System.Drawing.Size(281, 75);
+            this.btnMemoire.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMemoire.Size = new System.Drawing.Size(250, 60);
             this.btnMemoire.TabIndex = 4;
             this.btnMemoire.Text = "Mémoire";
             this.btnMemoire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -213,10 +204,10 @@
             // 
             // frmMDI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1037, 506);
             this.ControlBox = false;
             this.Controls.Add(this.panelSidebar);
             this.IsMdiContainer = true;
