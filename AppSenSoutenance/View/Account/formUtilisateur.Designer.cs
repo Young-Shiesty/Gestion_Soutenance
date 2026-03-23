@@ -73,7 +73,6 @@
             this.txtCnom = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dgUtilisateur = new System.Windows.Forms.DataGridView();
-            this.btnPSelect = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabCandidat.SuspendLayout();
             this.tabProfesseur.SuspendLayout();
@@ -145,6 +144,7 @@
             // 
             // txtMatricule
             // 
+            this.txtMatricule.Enabled = false;
             this.txtMatricule.Location = new System.Drawing.Point(26, 394);
             this.txtMatricule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMatricule.Name = "txtMatricule";
@@ -263,7 +263,6 @@
             // 
             // tabProfesseur
             // 
-            this.tabProfesseur.Controls.Add(this.btnPSelect);
             this.tabProfesseur.Controls.Add(this.btnPsup);
             this.tabProfesseur.Controls.Add(this.txtPSpecialite);
             this.tabProfesseur.Controls.Add(this.btnPmod);
@@ -590,19 +589,7 @@
             this.dgUtilisateur.RowTemplate.Height = 28;
             this.dgUtilisateur.Size = new System.Drawing.Size(527, 580);
             this.dgUtilisateur.TabIndex = 0;
-            // 
-            // btnPSelect
-            // 
-            this.btnPSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(27)))), ((int)(((byte)(154)))));
-            this.btnPSelect.FlatAppearance.BorderSize = 0;
-            this.btnPSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPSelect.ForeColor = System.Drawing.Color.White;
-            this.btnPSelect.Location = new System.Drawing.Point(153, 447);
-            this.btnPSelect.Name = "btnPSelect";
-            this.btnPSelect.Size = new System.Drawing.Size(107, 38);
-            this.btnPSelect.TabIndex = 60;
-            this.btnPSelect.Text = "&Selectionner";
-            this.btnPSelect.UseVisualStyleBackColor = false;
+            this.dgUtilisateur.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUtilisateur_CellClick);
             // 
             // formUtilisateur
             // 
@@ -676,6 +663,5 @@
         private System.Windows.Forms.DataGridView dgUtilisateur;
         private System.Windows.Forms.TextBox txtDepartement;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button btnPSelect;
     }
 }
