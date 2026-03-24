@@ -339,7 +339,5 @@ namespace AppSenSoutenance.View.Account
             }
 
         }
-
-      
     }
 }
