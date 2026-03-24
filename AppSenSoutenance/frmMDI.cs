@@ -55,36 +55,6 @@ namespace AppSenSoutenance
             }
         }
 
-        private void btnSeDeconnecter_Click(object sender, EventArgs e)
-        {
-            DialogResult confirm = MessageBox.Show("Voulez-vous vraiment vous déconnecter ?",
-            "Déconnexion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (confirm == DialogResult.No) return;
-            frmConnexion f = new frmConnexion();    
-            f.Show();
-            this.Close();
-        }
-
-        private void btnQuitter_Click(object sender, EventArgs e)
-        {
-              DialogResult confirm = MessageBox.Show("Voulez-vous vraiment quitter l'application ?",
-             "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (confirm == DialogResult.No) return;
-            Application.Exit();
-        }
-
-        private void btnAnnee_Click(object sender, EventArgs e)
-        {
-            OuvrirFormulaire(new frmAnneeAcademique());
-        }
-
-        private void btnSession_Click(object sender, EventArgs e)
-        {
-            OuvrirFormulaire(new frmSession());
-        }
-
-        
-
         private void frmMDI_Load(object sender, EventArgs e)
         {
             btnUtilisateur.Visible = true;
@@ -101,20 +71,48 @@ namespace AppSenSoutenance
             this.Height = myComputer.Screen.Bounds.Height;
             this.Location = new Point(0, 0);
         }
-
-        private void btnMemoire_Click(object sender, EventArgs e)
+        private void btnUtilisateur_Click(object sender, EventArgs e)
         {
-            OuvrirFormulaire(new frmMemoire());
+            OuvrirFormulaire(new formUtilisateur());
         }
 
-        private void btnSoutenance_Click(object sender, EventArgs e)
+        private void btnSoutenance_Click_1(object sender, EventArgs e)
         {
             OuvrirFormulaire(new frmSoutenance());
         }
 
-        private void btnUtilisateur_Click_1(object sender, EventArgs e)
+        private void btnMemoire_Click_1(object sender, EventArgs e)
         {
-            OuvrirFormulaire(new formUtilisateur());
+            OuvrirFormulaire(new frmMemoire());
+        }
+
+        private void btnSession_Click_1(object sender, EventArgs e)
+        {
+            OuvrirFormulaire(new frmSession());
+        }
+
+        private void btnAnnee_Click_1(object sender, EventArgs e)
+        {
+            OuvrirFormulaire(new frmAnneeAcademique());
+
+        }
+
+        private void btnQuitter_Click_1(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Voulez-vous vraiment quitter l'application ?",
+            "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.No) return;
+            Application.Exit();
+        }
+
+        private void btnSeDeconnecter_Click_1(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Voulez-vous vraiment vous déconnecter ?",
+           "Déconnexion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.No) return;
+            frmConnexion f = new frmConnexion();
+            f.Show();
+            this.Close();
         }
     }
 }
